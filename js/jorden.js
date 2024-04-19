@@ -32,6 +32,8 @@ loader.load(
     //If the file is loaded, add it to the scene
     object = gltf.scene;
     scene.add(object);
+    //Start the 3D rendering
+    animate();
   }
 );
 
@@ -64,9 +66,5 @@ function animate() {
 
   object.rotation.y += 0.01;
   renderer.render(scene, camera);
-  
 
 }
-
-//Start the 3D rendering
-animate();

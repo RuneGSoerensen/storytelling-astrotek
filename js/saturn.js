@@ -32,6 +32,8 @@ loader.load(
     //If the file is loaded, add it to the scene
     object = gltf.scene;
     scene.add(object);
+    //Start the 3D rendering
+    animate();
   }
 );
 
@@ -45,7 +47,7 @@ document.getElementById("saturnContainer").appendChild(renderer.domElement);
 
 
 //Set how far the camera will be from the 03D model
-camera.position.z = objToRender === objToRender ? 220 : 500;
+camera.position.z = objToRender === objToRender ? 325 : 500;
 
 //Add lights to the scene, so we can actually see the 3D model
 const topLight = new THREE.DirectionalLight(0xc4c4c4, 8); // (color, intensity)
@@ -67,6 +69,3 @@ function animate() {
   
 
 }
-
-//Start the 3D rendering
-animate();
