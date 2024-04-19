@@ -1,0 +1,113 @@
+[
+    {
+        "planetFolderName":"solen" ,
+        "3dObject": "scene.gltf",
+        "texture": "Material_baseColor.jpeg", 
+        "planetName": "Solen",
+        "temperature": "Meget varm",
+        "geograpicText": " et eller andet tekst",
+        "history": "noget om historen",
+        "kredsløb": "noget om kredsløb",
+        "funFact": "et fun fact",
+        "timeOnPlanet": "tid på planeten"
+    },
+    {
+        "planetFolderName":"merkur" ,
+        "3dObject": "scene.gltf",
+        "texture": "Material_baseColor.jpeg", 
+        "planetName": "Mars",
+        "temperature": "Meget varm",
+        "geograpicText": " et eller andet tekst",
+        "history": "noget om historen",
+        "kredsløb": "noget om kredsløb",
+        "funFact": "et fun fact",
+        "timeOnPlanet": "tid på planeten"
+    },
+    {
+        "planetFolderName":"venus" ,
+        "3dObject": "scene.gltf",
+        "texture": "Material_baseColor.jpeg", 
+        "planetName": "Solen",
+        "temperature": "Meget varm",
+        "geograpicText": " et eller andet tekst",
+        "history": "noget om historen",
+        "kredsløb": "noget om kredsløb",
+        "funFact": "et fun fact",
+        "timeOnPlanet": "tid på planeten"
+    },
+    {
+        "planetFolderName":"jorden" ,
+        "3dObject": "scene.gltf",
+        "texture": "Material_baseColor.jpeg", 
+        "planetName": "Solen",
+        "temperature": "Meget varm",
+        "geograpicText": " et eller andet tekst",
+        "history": "noget om historen",
+        "kredsløb": "noget om kredsløb",
+        "funFact": "et fun fact",
+        "timeOnPlanet": "tid på planeten"
+    },
+    {
+        "planetFolderName":"mars" ,
+        "3dObject": "scene.gltf",
+        "texture": "Material_baseColor.jpeg", 
+        "planetName": "Solen",
+        "temperature": "Meget varm",
+        "geograpicText": " et eller andet tekst",
+        "history": "noget om historen",
+        "kredsløb": "noget om kredsløb",
+        "funFact": "et fun fact",
+        "timeOnPlanet": "tid på planeten"
+    },
+    {
+        "planetFolderName":"jupiter" ,
+        "3dObject": "scene.gltf",
+        "texture": "Material_baseColor.jpeg", 
+        "planetName": "Solen",
+        "temperature": "Meget varm",
+        "geograpicText": " et eller andet tekst",
+        "history": "noget om historen",
+        "kredsløb": "noget om kredsløb",
+        "funFact": "et fun fact",
+        "timeOnPlanet": "tid på planeten"
+    },
+    {
+        "planetFolderName":"saturn" ,
+        "3dObject": "scene.gltf",
+        "texture": "Material_baseColor.jpeg", 
+        "planetName": "Solen",
+        "temperature": "Meget varm",
+        "geograpicText": " et eller andet tekst",
+        "history": "noget om historen",
+        "kredsløb": "noget om kredsløb",
+        "funFact": "et fun fact",
+        "timeOnPlanet": "tid på planeten"
+    },
+    {
+        "planetFolderName":"uranus" ,
+        "3dObject": "scene.gltf",
+        "texture": "Material_baseColor.jpeg", 
+        "planetName": "Solen",
+        "temperature": "Meget varm",
+        "geograpicText": " et eller andet tekst",
+        "history": "noget om historen",
+        "kredsløb": "noget om kredsløb",
+        "funFact": "et fun fact",
+        "timeOnPlanet": "tid på planeten"
+    },
+    {
+        "planetFolderName":"neptun" ,
+        "3dObject": "scene.gltf",
+        "texture": "Material_baseColor.jpeg", 
+        "planetName": "Solen",
+        "temperature": "Meget varm",
+        "geograpicText": " et eller andet tekst",
+        "history": "noget om historen",
+        "kredsløb": "noget om kredsløb",
+        "funFact": "et fun fact",
+        "timeOnPlanet": "tid på planeten"
+    }
+   
+
+
+]
