@@ -68,9 +68,7 @@
     
   }
   /* start style af solen */
-  .info-grapic{
-    transform: translate(0, -110%);
-  }
+
   .info-cirkel{
     width: 30vh;
     height: auto;
@@ -83,8 +81,19 @@
     width:3%;
     z-index: 1;
   }
-  .underside-button{
-    
+  .underside-button-div{
+    float: right;
   }
+  .underside-button-div{
+   
+  }
+  .underside-button{
+    display: flex;
+    flex-direction: column;
+   margin: 2rem;
+   margin-right: 5rem;
+   
+  }
+
   .button-geo{}
   .button-historie{}

@@ -19,7 +19,7 @@ const newSize = minSize * 0.48;
 let object;
 
 //Set which object to render
-let objToRender = "jupiter";
+let objToRender = "merkur";
 
 
 //Instantiate a loader for the .gltf file
@@ -41,7 +41,7 @@ renderer.setSize(newSize, newSize);
 renderer.setPixelRatio(window.devicePixelRatio * 2);
 
 //Add the renderer to the DOM
-document.getElementById("container3D").appendChild(renderer.domElement);
+document.getElementById("merkurContainer").appendChild(renderer.domElement);
 
 
 //Set how far the camera will be from the 03D model
