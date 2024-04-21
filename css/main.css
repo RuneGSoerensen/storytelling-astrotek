@@ -51,8 +51,9 @@
     
   }
   .forside-button{
+    font-size: 1rem;
     height: 2rem;
-    width: 10rem;
+    width: 11rem;
     border-radius: 20px;
     border: 0px;
     margin: 5rem;
