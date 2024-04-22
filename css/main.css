@@ -276,11 +276,17 @@ width: auto;
 /* STYLING AF MERKUR UNDERSIDE */
 
 .merkur-2d {
-  width: 35%;
+  width: 30%;
   position: absolute;
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
+}
+
+.merkur-maskot {
+  width: 15%;
+  margin-left: 71rem;
+  margin-top: 26rem;
 }
 
 
