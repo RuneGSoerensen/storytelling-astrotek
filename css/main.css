@@ -111,19 +111,20 @@
     z-index: 1;
     width: 14%;
   }
-  .information-wheel {
+  .information-icons {
     color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
   }
-  
-  
-  .information-text {
+  .information-icons p {
     border: 2px solid var(--white);
-    color: var(--white);
+    visibility: hidden;
   }
+  .information-icons p.visible {
+    visibility: visible;
+}
+  
   .flex-div{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
