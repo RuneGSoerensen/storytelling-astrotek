@@ -12,13 +12,15 @@
     font-family: le-havre-rounded, sans-serif;    
   }
  
+  body{
+    overflow-x: hidden;
+  }
 .slides{
   background-image: url(../media/background/background_1B.webp);
-  background-position: 180deg;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  position: relative;
+  width: 100vw;
 }
 .logo{
   width: 15%;
@@ -202,3 +204,68 @@
 .scrolldown-box p{
   color: gray;
 }
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.underside-solen{
+  background-image: url(/media/background/background_1B.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  transform: translate(0%);
+}
+
+.tilbage-button{
+width: 5rem;
+height: 3rem;
+border: 0;
+margin-top: 2rem;
+background-color: transparent;
+color: gray;
+}
+
+
+.solens-overflade{
+height: 100vh;
+width: auto;
+
+}
+.underside-tekst-solen{
+  width: 20vw;
+  margin-top: 10rem;
+  font-size: 1.2rem;
+}
+p{
+  color: white;
+  opacity: 0;
+
+}
+
+
+
+
+
+#forsiden {
+  display: flex;
+  height: 100vh; 
+  width: 200vw;
+
+}
+
+
+.forside-sektion {
+  flex: 1;
+}
+
+.underside-solen {
+  flex: 1; 
+
+}
+
+
