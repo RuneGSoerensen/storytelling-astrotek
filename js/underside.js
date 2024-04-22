@@ -105,7 +105,7 @@ function reverseAnimations(undersideSection) {
 
 
 //  MERKUR
-
+let buttonContainer;
 
 const merkurSection = document.getElementById("merkur");
 const merkurButton = document.getElementById("merkurButton");
@@ -119,6 +119,20 @@ function createMerkur() {
     fetch(url)
     .then(res => res.json())
     .then(json => {
+        buttonContainer = document.createElement("div");
+        buttonContainer.classList.add("tilbage-button-container");
+    
+        const backButtonMerkur = document.createElement("button");
+        backButtonMerkur.classList.add("tilbage-button");
+        backButtonMerkur.textContent = "Tilbage";
+        buttonContainer.appendChild(backButtonMerkur);
+    
+        const arrowImage = document.createElement("img");
+        arrowImage.classList.add("tilbage-arrow");
+        arrowImage.src = "../media/ikoner/arrow.png";
+        buttonContainer.appendChild(arrowImage);
+
+        merkurUndersideSection.appendChild(buttonContainer);
 
         const merkurUndersideTekst = document.getElementById("merkurP");
         merkurUndersideTekst.innerHTML = `${json[1].history}`;
