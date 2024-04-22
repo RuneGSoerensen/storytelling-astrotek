@@ -115,7 +115,8 @@
   
   .information-text {
     border: 2px solid var(--white);
-    visibility: hidden;
+  
+    color: var(--white);
   }
   .flex-div{
     display: grid;
