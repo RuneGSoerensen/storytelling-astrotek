@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const button = document.getElementById("udforskSolen");
 const url = "../json/planeter.json";
-
+const bodyelem = document.body
 button.addEventListener("click", () => {
     createElements();
     forsideslide();
@@ -32,6 +32,7 @@ function createElements() {
     
         const arrowImage = document.createElement("img");
         arrowImage.classList.add("tilbage-arrow");
+        arrowImage.src = "../media/ikoner/arrow.png";
         buttonContainer.appendChild(arrowImage);
     
         undersideSection.appendChild(buttonContainer);
@@ -52,7 +53,7 @@ function createElements() {
     
         
     
-        backButton.addEventListener("click", () => {
+        buttonContainer.addEventListener("click", () => {
             reverseAnimations(undersideSection);
         });
     
@@ -64,7 +65,9 @@ function createElements() {
         undersideSection.style.transition = "transform 1s ease-in-out";
         undersideSection.style.transform = "translate(-100%)";
         
+        bodyelem.classList.add("bodystuck")
     }) .catch(error => console.error("error:", error));
+   
 }
   
    
@@ -74,6 +77,8 @@ function forsideslide() {
     const forsideSection = document.getElementById("forsideSektion");
     forsideSection.style.transition = "transform 1s ease-in-out";
     forsideSection.style.transform = "translate(-100%)";
+    
+    
 }
 // function som går tilbage til forsiden
 function reverseAnimations(undersideSection) {
@@ -83,6 +88,7 @@ function reverseAnimations(undersideSection) {
 
     undersideSection.style.transition = "transform 1s ease-in-out";
     undersideSection.style.transform = "translate(0%)";
+    bodyelem.classList.remove("bodystuck")
 // setTimeout på en function som fjerne elementerne lavet af createElements
     setTimeout(() => {
         forsiden.removeChild(undersideSection);

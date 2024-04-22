@@ -14,6 +14,10 @@
  
   body{
     overflow-x: hidden;
+    
+  }
+  .bodystuck{
+    overflow-y: hidden;
   }
 .slides{
   background-image: url(../media/background/background_1B.webp);
@@ -24,8 +28,8 @@
 }
 .logo{
   width: 15%;
-  margin-left: 1rem;
-  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
 }
 
   h1{
@@ -59,7 +63,7 @@
     border-radius: 20px;
     border: 0px;
     margin: 5rem;
-    margin-top: 10rem;
+    margin-top: 6rem;
     background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
     transition: ease-out 200ms;
   }
@@ -109,15 +113,15 @@
   }
   .information-wheel {
     color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
   }
-  .omloebstid:hover ~ .information-text {
-    visibility: visible;
-  }
+  
   
   .information-text {
     border: 2px solid var(--white);
-  
     color: var(--white);
   }
   .flex-div{
@@ -205,11 +209,7 @@
   color: gray;
 }
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+
 .underside-solen{
   background-image: url(/media/background/background_1B.webp);
   background-repeat: no-repeat;
@@ -228,8 +228,18 @@ border: 0;
 margin-top: 2rem;
 background-color: transparent;
 color: gray;
+font-size: 1rem;
+transform: translate(0, 1rem);
+}
+.tilbage-arrow{
+width: 4rem;
 }
 
+.tilbage-button-container{
+display: flex;
+flex-direction: column;
+margin-left: 2rem;
+}
 
 .solens-overflade{
 height: 100vh;
@@ -241,11 +251,7 @@ width: auto;
   margin-top: 10rem;
   font-size: 1.2rem;
 }
-p{
-  color: white;
-  opacity: 0;
 
-}
 
 
 
@@ -269,3 +275,44 @@ p{
 }
 
 
+
+
+/* STYLING AF MERKUR UNDERSIDE */
+
+.merkur-2d {
+  width: 30%;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+.merkur-maskot {
+  width: 15%;
+  margin-left: 71rem;
+  margin-top: 26rem;
+}
+
+
+/* style af 404 side */
+
+.message404{
+font-size: 2rem;
+text-align: center;
+}
+.button404{
+height: 4rem;
+width: 10rem;
+border: 0;
+border-radius: 40px;
+}
+.pluto-404{
+  height:auto;
+  width: 300px;
+}
+
+.section404{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
