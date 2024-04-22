@@ -97,10 +97,56 @@ function reverseAnimations(undersideSection) {
 }
 
 
-            
+
  
  
 
- });
- 
- 
+
+
+
+//  MERKUR
+
+
+const merkurSection = document.getElementById("merkur");
+const merkurButton = document.getElementById("merkurButton");
+const merkurUndersideSection = document.getElementsByClassName("merkurUnderside")[0];
+
+merkurButton.addEventListener("click", () => {
+    createMerkur();
+});
+
+function createMerkur() {
+    fetch(url)
+    .then(res => res.json())
+    .then(json => {
+
+        const merkurUndersideTekst = document.getElementById("merkurP");
+        merkurUndersideTekst.innerHTML = `${json[1].history}`;
+    
+        document.body.classList.add("bodystuck");
+    
+        buttonContainer.addEventListener("click", () => {
+            reverseAnimations(merkurUndersideSection);
+        });
+    
+        merkurSection.style.transition = "transform 1s ease-in-out";
+        merkurSection.style.transform = "translate(-100%)";
+        merkurUndersideSection.style.transition = "transform 1s ease-in-out";
+        merkurUndersideSection.style.transform = "translate(-100%)";
+    })
+    .catch(error => console.error("error:", error));
+}
+
+function reverseAnimations(merkurUndersideSection) {
+    const merkurSection = document.getElementById("merkur");
+    merkurSection.style.transition = "transform 1s ease-in-out";
+    merkurSection.style.transform = "translate(0)";
+
+    merkurUndersideSection.style.transition = "transform 1s ease-in-out";
+    merkurUndersideSection.style.transform = "translate(0%)";
+    document.body.classList.remove("bodystuck");
+
+
+}
+
+});
