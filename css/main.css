@@ -109,15 +109,15 @@
   }
   .information-wheel {
     color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
   }
-  .omloebstid:hover ~ .information-text {
-    visibility: visible;
-  }
+  
   
   .information-text {
     border: 2px solid var(--white);
-  
     color: var(--white);
   }
   .flex-div{
@@ -205,11 +205,7 @@
   color: gray;
 }
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+
 .underside-solen{
   background-image: url(/media/background/background_1B.webp);
   background-repeat: no-repeat;
@@ -228,8 +224,18 @@ border: 0;
 margin-top: 2rem;
 background-color: transparent;
 color: gray;
+font-size: 1rem;
+transform: translate(0, 1rem);
+}
+.tilbage-arrow{
+width: 4rem;
 }
 
+.tilbage-button-container{
+display: flex;
+flex-direction: column;
+margin-left: 2rem;
+}
 
 .solens-overflade{
 height: 100vh;
@@ -241,11 +247,7 @@ width: auto;
   margin-top: 10rem;
   font-size: 1.2rem;
 }
-p{
-  color: white;
-  opacity: 0;
 
-}
 
 
 

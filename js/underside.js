@@ -32,6 +32,7 @@ function createElements() {
     
         const arrowImage = document.createElement("img");
         arrowImage.classList.add("tilbage-arrow");
+        arrowImage.src = "../media/ikoner/arrow.png";
         buttonContainer.appendChild(arrowImage);
     
         undersideSection.appendChild(buttonContainer);
@@ -52,7 +53,7 @@ function createElements() {
     
         
     
-        backButton.addEventListener("click", () => {
+        buttonContainer.addEventListener("click", () => {
             reverseAnimations(undersideSection);
         });
     
