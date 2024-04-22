@@ -21,6 +21,7 @@
         <!-- FAVICON, CSS OG JAVASCRIPT -->
         <link rel="icon" type="image/ico" href="media/ikoner/favicon.ico">
         <link rel="stylesheet" href="css/main.css">
+        <script type="module" src="js/script.js"></script>
         <script type="module" src="js/solen.js"></script>
         <script type="module" src="js/merkur.js"></script>
         <script type="module" src="js/venus.js"></script>
@@ -30,7 +31,6 @@
         <script type="module" src="js/saturn.js"></script>
         <script type="module" src="js/uranus.js"></script>
         <script type="module" src="js/neptune.js"></script>
-        <!-- <script type="module" src="js/minorScripts.js"></script> -->             
 </head>
 
 
@@ -62,12 +62,18 @@
                     <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
                 </figure>
                 <figure class="iconer-figure">
-                    <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    </div>
                 </figure>
-                <div class="information-wheel">
-                        <p class="top-info information-text">
+                <div class="information-icons">
+                        <p>
                             Det her er top-infoLorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
                         </p>
                         <p class="mid-info information-text">
