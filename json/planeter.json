@@ -1,7 +1,7 @@
 [
     {
         "planetName": "Solen",
-        "temperature": "Solens indre er 15 millioner grader varm. Overfladetemperaturen er 5.504 °C",
+        "temperature": "Overfladetemperaturen på Solen er 5.504 °C, mens Solens indre er 15 millioner grader varm. ",
         "geograpicText": "Diameter = 1.391.117 km, Rumindhold = 1.300.00 x Jorden, Tyngdekraft = 28 x Jorden, Masse = 332.900 x Jorden, Tæthed 1.409 gm/cm3, Overfladeareal = 11.990 x Jorden, Undvigelseshastighed = 2.223,73 km/t",
         "history": "Solen blev dannet ved et kollaps af en interstellar gassky for cirka 4,6 milliarder år siden. Både Solen og solsystemets skabelse har fælles oprindelse, da det er Solens udvikling gennem tiden som er, og har været, afgørende for solsystemets skæbne.",
         "kredsløb": "noget om kredsløb",
@@ -15,7 +15,7 @@
         "history": "Merkur er den mindste planet i solsytemet og også den planet som er at finde tættest på Solen. Merkur er en af solsystemets fire stenplaneter og på dens overflade findes kraterfyldte områder og sletter. Den minder derfor meget om Månen som vi kender den. Den har ingen atmosfære af særlig betydning og har heller ingen måner.",
         "kredsløb": "Èt år på Merkur svarer til cirka 88 dage på Jorden.",
         "funFact": "Merkur er den planet med de største temperatursvingninger",
-        "timeOnPlanet": "tid på planeten"
+        "timeOnPlanet": "Èn dag på Merkur svarer til cirka 59 dage på Jorden"
     },
     {
         "planetName": "Venus",
@@ -24,60 +24,60 @@
         "history": "Venus er størrelsesmæssigt næsten identisk med Jorden, ligesom sammensætningen af grundstoffer og afstanden fra Solen også er næsten ens. NASA har planlagt to missioner til Venus for at undersøge hvorfor planeten i dag er et inferno-lignende miljø, når den deler så mange ligheder med Jorden. Disse forventes at finde sted mellem 2028 og 2030.",
         "kredsløb": "Èt år på Venus svarer til cirka 224 dage på Jorden.",
         "funFact": "Venus er den varmeste planet i vores solsystem.",
-        "timeOnPlanet": "tid på planeten"
+        "timeOnPlanet": "Èn dag på Venus svarer til cirka 243 dage på Jorden"
     },
     {
         "planetName": "Jorden",
-        "temperature": "Meget varm",
+        "temperature": "Temperaturinterval = -88/58 °C",
         "geograpicText": "Diameter = 12.756,27 km, Rumfang = 1,0832 x 10^12 km3, Tyngdekraft = 0,997 N, Masse = 5,9742 x 10^24 km3, Tæthed = 5,515 gm/cm3, Overfladeareal = 510.065.600 km2, Undvigelseshastighed = 40.250 km/t, Antal måner = 1",
         "history": "noget om historien",
-        "kredsløb": "noget om kredsløb",
+        "kredsløb": "Èt år på Jorden er 365,24 dage",
         "funFact": "et fun fact",
-        "timeOnPlanet": "tid på planeten"
+        "timeOnPlanet": "Èn dag på Jorden er 24 timer"
     },
     {
         "planetName": "Mars",
-        "temperature": "Meget varm",
+        "temperature": "Temperaturintervallet på Mars er mellem -87 og -5 °C",
         "geograpicText": "Diameter = 10.870,4 km, Rumfang = 0,149 x Jorden, Tyngdekraft = 0,38 x Jorden, Masse = 0,107 x Jorden, Tæthed =3,933 gm/cm3, Overfladeareal = 0,282 x Jorden, Undvigelseshastighed = 18.070 km/t, Antal måner = 2",
         "history": "noget om historien",
-        "kredsløb": "noget om kredsløb",
+        "kredsløb": "Èt år på Mars svarer til cirka 1,88 år på Jorden.",
         "funFact": "et fun fact",
-        "timeOnPlanet": "tid på planeten"
+        "timeOnPlanet": "Èn dag på Mars svarer til 24,6 timer på Jorden."
     },
     {
         "planetName": "Jupiter",
-        "temperature": "Meget varm",
+        "temperature": "Temperaturintervallet på Jupiter er mellem cirka 15 og 20 °C",
         "geograpicText": "Diameter = 142.983,94 km, Rumfang = 1.316 x Jorden, Tyngdekraft = 375 x Jorden, Masse = 317,8 x Jorden, Tæthed = 1,33 gm/cm3, Overfladeareal = 121,9 x Jorden, Undvigelseshastighed = 214.364,62 km/t, Antal måner = 63",
         "history": "noget om historien",
-        "kredsløb": "noget om kredsløb",
+        "kredsløb": "Èt år på Jupiter svarer til cirka 12 år på Jorden.",
         "funFact": "et fun fact",
-        "timeOnPlanet": "tid på planeten"
+        "timeOnPlanet": "Èn dag på Jupiter svarer til 9,8 timer på Jorden."
     },
     {
         "planetName": "Saturn",
-        "temperature": "Meget varm",
+        "temperature": "Gennemsnitstemperaturen på Saturn er -139 °C",
         "geograpicText": "Diameter = 120.536 km, Rumfang = 755 x Jorden, Tyngdekraft = 1,16 x Jorden, Masse = 95,2 x Jorden, Tæthed = 0,7 gm/cm3, Overfladeareal = 85,22 x Jorden, Undvigelseshastighed = 127,770 km/t, Antal måner = 33",
         "history": "noget om historien",
-        "kredsløb": "noget om kredsløb",
+        "kredsløb": "Èt år på Saturn svarer til cirka 30 år på Jorden.",
         "funFact": "et fun fact",
-        "timeOnPlanet": "tid på planeten"
+        "timeOnPlanet": "Èn dag på Saturn svarer til 10,2 timer på Jorden."
     },
     {
         "planetName": "Uranus",
-        "temperature": "Meget varm",
+        "temperature": "Gennemsnitstemperaturen på Uranus er -197 °C",
         "geograpicText": "Diameter = 51.118,08 km, Rumfang = 52 x Jorden, Tyngdekraft = 1,15 x Jorden, Masse = 14,48 x Jorden, Tæthed = 1,3 gm/cm3, Overfladeareal = 15,91 x Jorden, Undvigelseshastighed = 68.819km/t, Antal måner = 27",
-        "history": "noget om historien",
-        "kredsløb": "noget om kredsløb",
-        "funFact": "et fun fact",
-        "timeOnPlanet": "tid på planeten"
+        "history": "Uranus er den syvende planet i solsystemet og har ingen fast overflade, da den betegnes som en gasplanet. Dens blågrønne farve opstår fordi metangassen i atmosfæren absorberer rødt lys og reflekterer blåt lys.",
+        "kredsløb": "Èt år på Uranus svarer til cirka 84 år på Jorden.",
+        "funFact": "Uranus var den første planet som blev opdaget gennem et teleskop. Andre planeter som fx Venus, kan ses med det blotte øje og kræver ikke nødvendigvis et teleskop, ligesom Uranus.",
+        "timeOnPlanet": "Èn dag på Uranus svarer til cirka 18 timer på Jorden"
     },
     {
         "planetName": "Neptun",
-        "temperature": "Meget varm",
+        "temperature": "Neptun har en gennemsnitstemperatur på -197 °C",
         "geograpicText": "Diameter = 55.528 km, Rumfang = 44 x Jorden, Tyngdekraft = 1,19 x Jorden, Masse = 17,2 x Jorden, Tæthed = 1,76 gm/cm3, Overfladeareal = 14,98 x Jorden, Undvigelseshastighed = 85.360 km/t, Antal måner = 13",
         "history": "noget om historien",
-        "kredsløb": "noget om kredsløb",
-        "funFact": "et fun fact",
-        "timeOnPlanet": "tid på planeten"
+        "kredsløb": "Èt år på Neptun svarer til cirka 163 år på Jorden.",
+        "funFact": "Hver årstid på Neptun varer omkring 40 år",
+        "timeOnPlanet": "Èn dag på Neptun svarer til cirka 19 timer på Jorden."
     }
 ]
