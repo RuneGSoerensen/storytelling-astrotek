@@ -1,7 +1,7 @@
 "use strict";
-
+// domContentLoaded gør at den først ser javascript filen når hjemmesiden er loaded
 document.addEventListener("DOMContentLoaded", function () {
-
+// SOLEN
 const button = document.getElementById("udforskSolen");
 const url = "../json/planeter.json";
 const bodyelem = document.body
@@ -105,62 +105,46 @@ function reverseAnimations(undersideSection) {
 
 
 //  MERKUR
-let buttonContainer;
 
-const merkurSection = document.getElementById("merkur");
-const merkurButton = document.getElementById("merkurButton");
-const merkurUndersideSection = document.getElementsByClassName("merkurUnderside")[0];
-
-merkurButton.addEventListener("click", () => {
-    createMerkur();
-});
-
-function createMerkur() {
-    fetch(url)
-    .then(res => res.json())
-    .then(json => {
-        buttonContainer = document.createElement("div");
-        buttonContainer.classList.add("tilbage-button-container");
-    
-        const backButtonMerkur = document.createElement("button");
-        backButtonMerkur.classList.add("tilbage-button");
-        backButtonMerkur.textContent = "Tilbage";
-        buttonContainer.appendChild(backButtonMerkur);
-    
-        const arrowImage = document.createElement("img");
-        arrowImage.classList.add("tilbage-arrow");
-        arrowImage.src = "../media/ikoner/arrow.png";
-        buttonContainer.appendChild(arrowImage);
-
-        merkurUndersideSection.appendChild(buttonContainer);
-
-        const merkurUndersideTekst = document.getElementById("merkurP");
-        merkurUndersideTekst.innerHTML = `${json[1].history}`;
-    
-        document.body.classList.add("bodystuck");
-    
-        buttonContainer.addEventListener("click", () => {
-            reverseAnimations(merkurUndersideSection);
-        });
-    
-        merkurSection.style.transition = "transform 1s ease-in-out";
-        merkurSection.style.transform = "translate(-100%)";
-        merkurUndersideSection.style.transition = "transform 1s ease-in-out";
-        merkurUndersideSection.style.transform = "translate(-100%)";
-    })
-    .catch(error => console.error("error:", error));
-}
-
-function reverseAnimations(merkurUndersideSection) {
     const merkurSection = document.getElementById("merkur");
-    merkurSection.style.transition = "transform 1s ease-in-out";
-    merkurSection.style.transform = "translate(0)";
+    const merkurButton = document.getElementById("merkurButton");
+    const merkurUndersideSection = document.getElementsByClassName("merkurUnderside")[0];
+    const merkurBackbutton = document.getElementById("merkurBackButton");
 
-    merkurUndersideSection.style.transition = "transform 1s ease-in-out";
-    merkurUndersideSection.style.transform = "translate(0%)";
-    document.body.classList.remove("bodystuck");
+    merkurButton.addEventListener("click", () => {
+        createMerkur();
+    });
 
+    function createMerkur() {
+        fetch(url)
+        .then(res => res.json())
+        .then(json => {
 
-}
+            const merkurUndersideTekst = document.getElementById("merkurP");
+            merkurUndersideTekst.innerHTML = `${json[1].history}`;
+        
+            document.body.classList.add("bodystuck");
+
+            merkurSection.style.transition = "transform 1s ease-in-out";
+            merkurSection.style.transform = "translate(-100%)";
+            merkurUndersideSection.style.transition = "transform 1s ease-in-out";
+            merkurUndersideSection.style.transform = "translate(-100%)";
+        })
+        .catch(error => console.error("error:", error));
+    }
+
+    merkurBackbutton.addEventListener("click", () => {
+        reverseMerkurAnimations(merkurUndersideSection);
+    });
+
+    function reverseMerkurAnimations(merkurUndersideSection) {
+        const merkurSection = document.getElementById("merkur");
+        merkurSection.style.transition = "transform 1s ease-in-out";
+        merkurSection.style.transform = "translate(0)";
+
+        merkurUndersideSection.style.transition = "transform 1s ease-in-out";
+        merkurUndersideSection.style.transform = "translate(0%)";
+        document.body.classList.remove("bodystuck");
+    }
 
 });
