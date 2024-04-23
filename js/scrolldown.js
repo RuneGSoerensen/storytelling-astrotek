@@ -1,4 +1,4 @@
-const scrolldownInner = document.getElementsByClassName("scrolldown-inner")[0]; 
+const scrolldownInner = document.querySelectorAll(".scrolldown-inner")    //getElementsByClassName("scrolldown-inner")[0]; 
 
 function startLoop() {
     setTimeout(function () {
