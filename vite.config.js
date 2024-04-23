@@ -17,7 +17,7 @@ export default defineConfig(({ command }) => {
   };
 
   if (command !== "serve") {
-    config.base = "cederdorff.com/storytelling-astrotek/";
+    config.base = "/storytelling-astrotek/";
   }
 
   return config;
