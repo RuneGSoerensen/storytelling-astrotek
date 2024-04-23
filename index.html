@@ -1,709 +1,840 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- META -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Steno-Museum Interaktivt Astrotek">
-    <meta name="description" content="Oplev en interaktiv og engagerende digital løsning til Steno Museets 'Astroteket' udstilling i Aarhus. Udforsk fascinerende videnskabelige opdagelser, interaktivt indhold og unikke oplevelser, der vækker og tilfredsstiller din nysgerrighed for solsystemet og universet. Dyk ned i stjernehimlen, udforsk galakser og nyd en virtuel rejse gennem planetariumet og observatoriet. Lad dig inspirere til at besøge os personligt og opleve videnskabens verden på nært hold.">
-    <meta name="keywords" content="museum astronomi, planeter i solsystemet, planeter navne, planeter størrelse, solsystemet størrelsesforhold, stjernehimlen, galakser, planetarium, observatoriet">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="Danish">
-    <meta name="geo.region" content="DK" >
-    <meta name="geo.placename" content="Aarhus" >
-    <meta name="geo.position" content="56.169837;10.216097" >
-    <meta name="ICBM" content="56.169837, 10.216097" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Steno-Museum Interaktivt Astrotek" />
+    <meta
+      name="description"
+      content="Oplev en interaktiv og engagerende digital løsning til Steno Museets 'Astroteket' udstilling i Aarhus. Udforsk fascinerende videnskabelige opdagelser, interaktivt indhold og unikke oplevelser, der vækker og tilfredsstiller din nysgerrighed for solsystemet og universet. Dyk ned i stjernehimlen, udforsk galakser og nyd en virtuel rejse gennem planetariumet og observatoriet. Lad dig inspirere til at besøge os personligt og opleve videnskabens verden på nært hold." />
+    <meta
+      name="keywords"
+      content="museum astronomi, planeter i solsystemet, planeter navne, planeter størrelse, solsystemet størrelsesforhold, stjernehimlen, galakser, planetarium, observatoriet" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Danish" />
+    <meta name="geo.region" content="DK" />
+    <meta name="geo.placename" content="Aarhus" />
+    <meta name="geo.position" content="56.169837;10.216097" />
+    <meta name="ICBM" content="56.169837, 10.216097" />
 
-        <!-- TITLE -->
-        <title>Steno-Museum Interaktivt Astrotek</title>
+    <!-- TITLE -->
+    <title>Steno-Museum Interaktivt Astrotek</title>
 
-        <!-- FAVICON, CSS OG JAVASCRIPT -->
-        <link rel="icon" type="image/ico" href="media/ikoner/favicon.ico">
-        <link rel="stylesheet" href="css/main.css">
-        <script type="module" src="js/script.js"></script>
-        <script type="module" src="js/solen.js"></script>
-        <script type="module" src="js/merkur.js"></script>
-        <script type="module" src="js/venus.js"></script>
-        <script type="module" src="js/jorden.js"></script>
-        <script type="module" src="js/mars.js"></script>
-        <script type="module" src="js/jupiter.js"></script>
-        <script type="module" src="js/saturn.js"></script>
-        <script type="module" src="js/uranus.js"></script>
-        <script type="module" src="js/neptune.js"></script>
-    
-</head>
+    <!-- FAVICON og CSS -->
+    <link rel="icon" type="image/ico" href="media/ikoner/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-
-<body>
-
+  <body>
     <!-- SEKTION FOR FORSIDEN -->
-  
-        <section class="slides forside">
-            <img src="media/logo/steno-logo-hvid.png" alt="Steno-Museum logo" class="logo">
-            <br><br><br><br>
-            <h1>KOSMOS.</h1>
-            <br><br>
-            <h2>Mellem støv og stjerner :</h2>
-            <br><br>
-            <h3>Udforsk solsystemets skønhed og universets uendelighed</h3>
-            <div class="button-div">
-                <a class="forside-button" href="#solen">Udforsk Solsystemet</a>
-                <a class="forside-button" href="/pages/404.html">Udforsk Universet</a>
+
+    <section class="slides forside">
+      <img
+        src="media/logo/steno-logo-hvid.png"
+        alt="Steno-Museum logo"
+        class="logo" />
+      <br /><br /><br /><br />
+      <h1>KOSMOS.</h1>
+      <br /><br />
+      <h2>Mellem støv og stjerner :</h2>
+      <br /><br />
+      <h3>Udforsk solsystemets skønhed og universets uendelighed</h3>
+      <div class="button-div">
+        <a class="forside-button" href="#solen">Udforsk Solsystemet</a>
+        <a class="forside-button" href="pages/404.html">Udforsk Universet</a>
+      </div>
+    </section>
+
+    <!-- SEKTION FOR SOLEN -->
+    <section id="solen">
+      <section class="slides" id="forsideSektion">
+        <h1>Solen</h1>
+        <div class="flex-div">
+          <div id="solenContainer" class="planetContainer"></div>
+          <figure class="info-grapic">
+            <img
+              src="media/test-outerinfograpic-3points.png"
+              alt=""
+              class="info-cirkel" />
+          </figure>
+          <figure class="iconer-figure">
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-orbit.webp"
+                alt=""
+                class="iconer omloebstid" />
             </div>
-        </section>
-     
-        <!-- SEKTION FOR SOLEN -->
-        <section id="solen">
-        <section class="slides" id="forsideSektion">
-            <h1>Solen</h1>
-            <div class="flex-div">
-                <div id="solenContainer" class="planetContainer"></div>
-                <figure class="info-grapic">
-                    <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
-                </figure>
-                <figure class="iconer-figure">
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
-                    </div>
-                </figure>
-                <div class="information-icons">
-                        <p class="kredsloeb">
-                            Solen er omdrejningspunktet i vores solsystem
-                        </p>
-                        
-                        <p class="timeOnPlanet">
-                            Solen skinner altid på - Solen.
-                        </p>
-                        
-                        <p class="temperature">
-                            Overfladetemperaturen på Solen er 5.504 °C, mens Solens indre er 15 millioner grader varm. 
-                        </p>
-                </div>
-                <div class="underside-button-div">
-                    <button id="udforskSolen" class="underside-button button-histore">Udforsk viden</button>
-                    <button class="underside-button button-geo">Udforsk Geografi</button>
-                </div>
-                <ul class="navigation-side">
-                    <li><a href="#solen">Solen</a></li>
-                    <li><a href="#merkur">Merkur</a></li>
-                    <li><a href="#venus">Venus</a></li>
-                    <li><a href="#jorden">Jorden</a></li>
-                    <li><a href="#mars">Mars</a></li>
-                    <li><a href="#jupiter">Jupiter</a></li>
-                    <li><a href="#saturn">Saturn</a></li>
-                    <li><a href="#uranus">Uranus</a></li>
-                    <li><a href="#neptun">Neptun</a></li>
-                </ul>
+            <div class="icon-container">
+              <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid" />
             </div>
-            <figure class="scrolldown-box">
-                <div class="scrolldown-outer">
-                    <div class="scrolldown-inner">
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-temperatur.webp"
+                alt=""
+                class="iconer temperatur" />
+            </div>
+          </figure>
+          <div class="information-icons">
+            <p class="kredsloeb">
+              Solen er omdrejningspunktet i vores solsystem
+            </p>
 
-                    </div>
-                </div>
-                <p>Scroll down</p>
-            </figure>
-       </section>
-        </section>
+            <p class="timeOnPlanet">Solen skinner altid på - Solen.</p>
 
+            <p class="temperature">
+              Overfladetemperaturen på Solen er 5.504 °C, mens Solens indre er
+              15 millioner grader varm.
+            </p>
+          </div>
+          <div class="underside-button-div">
+            <button id="udforskSolen" class="underside-button button-histore">
+              Udforsk viden
+            </button>
+            <button class="underside-button button-geo">
+              Udforsk Geografi
+            </button>
+          </div>
+          <ul class="navigation-side">
+            <li><a href="#solen">Solen</a></li>
+            <li><a href="#merkur">Merkur</a></li>
+            <li><a href="#venus">Venus</a></li>
+            <li><a href="#jorden">Jorden</a></li>
+            <li><a href="#mars">Mars</a></li>
+            <li><a href="#jupiter">Jupiter</a></li>
+            <li><a href="#saturn">Saturn</a></li>
+            <li><a href="#uranus">Uranus</a></li>
+            <li><a href="#neptun">Neptun</a></li>
+          </ul>
+        </div>
+        <figure class="scrolldown-box">
+          <div class="scrolldown-outer">
+            <div class="scrolldown-inner"></div>
+          </div>
+          <p>Scroll down</p>
+        </figure>
+      </section>
+    </section>
 
-        <!-- SEKTION FOR MERKUR -->
+    <!-- SEKTION FOR MERKUR -->
     <section id="merkurSide">
-        <section class="slides" id="merkur">
-            <h1>Merkur</h1>
-            <div class="flex-div">
-                <div id="merkurContainer" class="planetContainer"></div>
-                <figure class="info-grapic">
-                    <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
-                </figure>
-                <figure class="iconer-figure">
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
-                    </div>
-                </figure>
-                <div class="information-icons">
-                        <p class="kredsloeb">
-                            Èt år på Merkur svarer til cirka 88 dage på Jorden.
-                        </p>
-                        
-                        <p class="timeOnPlanet">
-                            Èn dag på Merkur svarer til cirka 59 dage på Jorden.
-                        </p>
-                        
-                        <p class="temperature">
-                            Merkur har en gennemsnitstemperatur på 167 °C
-                        </p>
-                </div>
-                <div class="underside-button-div">
-                    <button class="underside-button button-histore" id="merkurButton">Udforsk viden</button>
-                    <button class="underside-button button-geo">Udforsk geografi</button>
-                </div>
-                <ul class="navigation-side">
-                    <li><a href="#solen">Solen</a></li>
-                    <li><a href="#merkur">Merkur</a></li>
-                    <li><a href="#venus">Venus</a></li>
-                    <li><a href="#jorden">Jorden</a></li>
-                    <li><a href="#mars">Mars</a></li>
-                    <li><a href="#jupiter">Jupiter</a></li>
-                    <li><a href="#saturn">Saturn</a></li>
-                    <li><a href="#uranus">Uranus</a></li>
-                    <li><a href="#neptun">Neptun</a></li>
-                </ul>
+      <section class="slides" id="merkur">
+        <h1>Merkur</h1>
+        <div class="flex-div">
+          <div id="merkurContainer" class="planetContainer"></div>
+          <figure class="info-grapic">
+            <img
+              src="media/test-outerinfograpic-3points.png"
+              alt=""
+              class="info-cirkel" />
+          </figure>
+          <figure class="iconer-figure">
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-orbit.webp"
+                alt=""
+                class="iconer omloebstid" />
             </div>
-            <figure class="scrolldown-box">
-                <div class="scrolldown-outer">
-                    <div class="scrolldown-inner">
-
-                    </div>
-                </div>
-                <p>Scroll down</p>
-            </figure>
-
-        </section>
-
-        <section class="merkurUnderside">
-            <div class="tilbage-button-container tilbage-button-merkur" id="merkurBackButton">
-                <button class="tilbage-button">Tilbage</button>
-                <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow">
+            <div class="icon-container">
+              <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid" />
             </div>
-            
-            <p id="merkurP"></p>
-            <p id="merkurFunFact"></p>
-            <img src="media/planeter-2d/2d-merkur.webp" alt="Merkur" class="merkur-2d">
-            <img class="merkur-maskot" src="media/pluto-yes.webp" alt="Planet med ansigt">
-            <img class="merkur-funfact" src="media/funfact.webp" alt="Talebobbel">
-            
-        </section>
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-temperatur.webp"
+                alt=""
+                class="iconer temperatur" />
+            </div>
+          </figure>
+          <div class="information-icons">
+            <p class="kredsloeb">
+              Èt år på Merkur svarer til cirka 88 dage på Jorden.
+            </p>
 
+            <p class="timeOnPlanet">
+              Èn dag på Merkur svarer til cirka 59 dage på Jorden.
+            </p>
 
+            <p class="temperature">
+              Merkur har en gennemsnitstemperatur på 167 °C
+            </p>
+          </div>
+          <div class="underside-button-div">
+            <button class="underside-button button-histore" id="merkurButton">
+              Udforsk viden
+            </button>
+            <button class="underside-button button-geo">
+              Udforsk geografi
+            </button>
+          </div>
+          <ul class="navigation-side">
+            <li><a href="#solen">Solen</a></li>
+            <li><a href="#merkur">Merkur</a></li>
+            <li><a href="#venus">Venus</a></li>
+            <li><a href="#jorden">Jorden</a></li>
+            <li><a href="#mars">Mars</a></li>
+            <li><a href="#jupiter">Jupiter</a></li>
+            <li><a href="#saturn">Saturn</a></li>
+            <li><a href="#uranus">Uranus</a></li>
+            <li><a href="#neptun">Neptun</a></li>
+          </ul>
+        </div>
+        <figure class="scrolldown-box">
+          <div class="scrolldown-outer">
+            <div class="scrolldown-inner"></div>
+          </div>
+          <p>Scroll down</p>
+        </figure>
+      </section>
+      <section class="merkurUnderside">
+        <div
+          class="tilbage-button-container tilbage-button-merkur"
+          id="merkurBackButton">
+          <button class="tilbage-button">Tilbage</button>
+          <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow" />
+        </div>
 
-
+        <p id="merkurP"></p>
+        <p id="merkurFunFact"></p>
+        <img
+          class="merkur-2d"
+          src="media/planeter-2d/2d-merkur.webp"
+          alt="Merkur" />
+        <img
+          class="merkur-maskot"
+          src="media/pluto-yes.webp"
+          alt="Planet med ansigt" />
+        <img class="merkur-funfact" src="media/funfact.webp" alt="Talebobbel" />
+      </section>
     </section>
     <!-- section af venus -->
     <section id="venusSide">
-        <section class="slides" id="venus">
-            <h1>Venus</h1>
-            <div class="flex-div">
-                <div id="venusContainer" class="planetContainer"></div>
-                <figure class="info-grapic">
-                    <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
-                </figure>
-                <figure class="iconer-figure">
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
-                    </div>
-                </figure>
-                <div class="information-icons">
-                        <p class="kredsloeb">
-                            Èt år på Venus svarer til cirka 224 dage på Jorden.
-                        </p>
-                        
-                        <p class="timeOnPlanet">
-                            Èn dag på Venus svarer til cirka 243 dage på Jorden.
-                        </p>
-                        
-                        <p class="temperature">
-                            Venus har en gennemsnitstemperatur på cirka 480 °C
-                        </p>
-                </div>
-                <div class="underside-button-div">
-                    <button class="underside-button button-histore" id="venusButton">Udforsk viden</button>
-                    <button class="underside-button button-geo">Udforsk geografi</button>
-                </div>
-                <ul class="navigation-side">
-                    <li><a href="#solen">Solen</a></li>
-                    <li><a href="#merkur">Merkur</a></li>
-                    <li><a href="#venus">Venus</a></li>
-                    <li><a href="#jorden">Jorden</a></li>
-                    <li><a href="#mars">Mars</a></li>
-                    <li><a href="#jupiter">Jupiter</a></li>
-                    <li><a href="#saturn">Saturn</a></li>
-                    <li><a href="#uranus">Uranus</a></li>
-                    <li><a href="#neptun">Neptun</a></li>
-                  
-                </ul>
+      <section class="slides" id="venus">
+        <h1>Venus</h1>
+        <div class="flex-div">
+          <div id="venusContainer" class="planetContainer"></div>
+          <figure class="info-grapic">
+            <img
+              src="media/test-outerinfograpic-3points.png"
+              alt=""
+              class="info-cirkel" />
+          </figure>
+          <figure class="iconer-figure">
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-orbit.webp"
+                alt=""
+                class="iconer omloebstid" />
             </div>
-            <figure class="scrolldown-box">
-                <div class="scrolldown-outer">
-                    <div class="scrolldown-inner">
-                    </div>
-                </div>
-                <p>Scroll down</p>
-            </figure>
-        </section>
-    
-        <section class="undersideVenus slides">
-            <div class="tilbage-button-container venus-tilbage-button" id="venusBackButton">
-                <button class="tilbage-button">Tilbage</button>
-                <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow">
+            <div class="icon-container">
+              <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid" />
             </div>
-    
-            <p class="venus-underside-tekst" id="venusP"> </p>
-            <img src="media/planeter-2d/2d-venus.webp" alt="Venus planet" class="venus-planet">
-          
-        </section>
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-temperatur.webp"
+                alt=""
+                class="iconer temperatur" />
+            </div>
+          </figure>
+          <div class="information-icons">
+            <p class="kredsloeb">
+              Èt år på Venus svarer til cirka 224 dage på Jorden.
+            </p>
+
+            <p class="timeOnPlanet">
+              Èn dag på Venus svarer til cirka 243 dage på Jorden.
+            </p>
+
+            <p class="temperature">
+              Venus har en gennemsnitstemperatur på cirka 480 °C
+            </p>
+          </div>
+          <div class="underside-button-div">
+            <button class="underside-button button-histore" id="venusButton">
+              Udforsk viden
+            </button>
+            <button class="underside-button button-geo">
+              Udforsk geografi
+            </button>
+          </div>
+          <ul class="navigation-side">
+            <li><a href="#solen">Solen</a></li>
+            <li><a href="#merkur">Merkur</a></li>
+            <li><a href="#venus">Venus</a></li>
+            <li><a href="#jorden">Jorden</a></li>
+            <li><a href="#mars">Mars</a></li>
+            <li><a href="#jupiter">Jupiter</a></li>
+            <li><a href="#saturn">Saturn</a></li>
+            <li><a href="#uranus">Uranus</a></li>
+            <li><a href="#neptun">Neptun</a></li>
+          </ul>
+        </div>
+        <figure class="scrolldown-box">
+          <div class="scrolldown-outer">
+            <div class="scrolldown-inner"></div>
+          </div>
+          <p>Scroll down</p>
+        </figure>
+      </section>
+
+      <section class="undersideVenus slides">
+        <div
+          class="tilbage-button-container venus-tilbage-button"
+          id="venusBackButton">
+          <button class="tilbage-button">Tilbage</button>
+          <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow" />
+        </div>
+
+        <p class="venus-underside-tekst" id="venusP"></p>
+        <img
+          src="media/planeter-2d/2d-venus.webp"
+          alt="Venus planet"
+          class="venus-planet" />
+      </section>
     </section>
     <section id="jordenSide">
-        <section class="slides" id="jorden">
-            <h1>Jorden</h1>
-            <div class="flex-div">
-                <div id="jordenContainer" class="planetContainer"></div>
-                <figure class="info-grapic">
-                    <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
-                </figure>
-                <figure class="iconer-figure">
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
-                    </div>
-                </figure>
-                <div class="information-icons">
-                        <p class="kredsloeb">
-                            Èt år på Jorden er 365,24 dage.
-                        </p>
-                        
-                        <p class="timeOnPlanet">
-                            Èn dag på Jorden er 24 timer.
-                        </p>
-                        
-                        <p class="temperature">
-                            Temperaturintervallet på Jorden ligger mellem -88 og 58 °C
-                        </p>
-                </div>
-                <div class="underside-button-div">
-                    <button class="underside-button button-histore" id="jordenButton">Udforsk viden</button>
-                    <button class="underside-button button-geo">Udforsk geografi</button>
-                </div>
-                <ul class="navigation-side">
-                    <li><a href="#solen">Solen</a></li>
-                    <li><a href="#merkur">Merkur</a></li>
-                    <li><a href="#venus">Venus</a></li>
-                    <li><a href="#jorden">Jorden</a></li>
-                    <li><a href="#mars">Mars</a></li>
-                    <li><a href="#jupiter">Jupiter</a></li>
-                    <li><a href="#saturn">Saturn</a></li>
-                    <li><a href="#uranus">Uranus</a></li>
-                    <li><a href="#neptun">Neptun</a></li>
-                </ul>
+      <section class="slides" id="jorden">
+        <h1>Jorden</h1>
+        <div class="flex-div">
+          <div id="jordenContainer" class="planetContainer"></div>
+          <figure class="info-grapic">
+            <img
+              src="media/test-outerinfograpic-3points.png"
+              alt=""
+              class="info-cirkel" />
+          </figure>
+          <figure class="iconer-figure">
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-orbit.webp"
+                alt=""
+                class="iconer omloebstid" />
             </div>
-            <figure class="scrolldown-box">
-                <div class="scrolldown-outer">
-                    <div class="scrolldown-inner"></div>
-                </div>
-                <p>Scroll down</p>
-            </figure>
-        </section>
-    
-        <section class="undersideJorden slides">
-            <div class="tilbage-button-container jorden-tilbage-button" id="jordenBackButton">
-                <button class="tilbage-button">Tilbage</button>
-                <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow">
+            <div class="icon-container">
+              <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid" />
             </div>
-            <p class="jorden-underside-tekst" id="jordenP"> </p>
-            <img src="media/planeter-2d/2d-earth.webp" alt="jorden planet" class="jorden-2d">
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-temperatur.webp"
+                alt=""
+                class="iconer temperatur" />
+            </div>
+          </figure>
+          <div class="information-icons">
+            <p class="kredsloeb">Èt år på Jorden er 365,24 dage.</p>
 
-        </section>
+            <p class="timeOnPlanet">Èn dag på Jorden er 24 timer.</p>
+
+            <p class="temperature">
+              Temperaturintervallet på Jorden ligger mellem -88 og 58 °C
+            </p>
+          </div>
+          <div class="underside-button-div">
+            <button class="underside-button button-histore" id="jordenButton">
+              Udforsk viden
+            </button>
+            <button class="underside-button button-geo">
+              Udforsk geografi
+            </button>
+          </div>
+          <ul class="navigation-side">
+            <li><a href="#solen">Solen</a></li>
+            <li><a href="#merkur">Merkur</a></li>
+            <li><a href="#venus">Venus</a></li>
+            <li><a href="#jorden">Jorden</a></li>
+            <li><a href="#mars">Mars</a></li>
+            <li><a href="#jupiter">Jupiter</a></li>
+            <li><a href="#saturn">Saturn</a></li>
+            <li><a href="#uranus">Uranus</a></li>
+            <li><a href="#neptun">Neptun</a></li>
+          </ul>
+        </div>
+        <figure class="scrolldown-box">
+          <div class="scrolldown-outer">
+            <div class="scrolldown-inner"></div>
+          </div>
+          <p>Scroll down</p>
+        </figure>
+      </section>
+
+      <section class="undersideJorden slides">
+        <div
+          class="tilbage-button-container jorden-tilbage-button"
+          id="jordenBackButton">
+          <button class="tilbage-button">Tilbage</button>
+          <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow" />
+        </div>
+        <p class="jorden-underside-tekst" id="jordenP"></p>
+        <img
+          src="media/planeter-2d/2d-earth.webp"
+          alt="jorden planet"
+          class="jorden-2d" />
+      </section>
     </section>
-    
-        <section id="marsSide">
-        <section class="slides" id="mars">
-            <h1>Mars</h1>
-            <div class="flex-div">
-                <div id="marsContainer" class="planetContainer"></div>
-                <figure class="info-grapic">
-                    <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
-                </figure>
-                <figure class="iconer-figure">
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
-                    </div>
-                </figure>
-                <div class="information-icons">
-                        <p class="kredsloeb">
-                            Èt år på Mars svarer til cirka 1,88 år på Jorden.
-                        </p>
-                        
-                        <p class="timeOnPlanet">
-                            Èn dag på Mars svarer til 24,6 timer på Jorden.
-                        </p>
-                        
-                        <p class="temperature">
-                            Temperaturintervallet på Mars ligger mellem -87 og -5 °C
-                        </p>
-                </div>
-                <div class="underside-button-div">
-                    <button class="underside-button button-histore" id="marsButton">Udforsk viden</button>
-                    <button class="underside-button button-geo">Udforsk geografi</button>
-                </div>
-                <ul class="navigation-side">
-                    <li><a href="#solen">Solen</a></li>
-                    <li><a href="#merkur">Merkur</a></li>
-                    <li><a href="#venus">Venus</a></li>
-                    <li><a href="#jorden">Jorden</a></li>
-                    <li><a href="#mars">Mars</a></li>
-                    <li><a href="#jupiter">Jupiter</a></li>
-                    <li><a href="#saturn">Saturn</a></li>
-                    <li><a href="#uranus">Uranus</a></li>
-                    <li><a href="#neptun">Neptun</a></li>
-                </ul>
+
+    <section id="marsSide">
+      <section class="slides" id="mars">
+        <h1>Mars</h1>
+        <div class="flex-div">
+          <div id="marsContainer" class="planetContainer"></div>
+          <figure class="info-grapic">
+            <img
+              src="media/test-outerinfograpic-3points.png"
+              alt=""
+              class="info-cirkel" />
+          </figure>
+          <figure class="iconer-figure">
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-orbit.webp"
+                alt=""
+                class="iconer omloebstid" />
             </div>
-            <figure class="scrolldown-box">
-                <div class="scrolldown-outer">
-                    <div class="scrolldown-inner">
-
-                    </div>
-                </div>
-                <p>Scroll down</p>
-            </figure>
-
- 
-
-        
-        </section>
-
-        <section class="undersideMars slides">
-
-            <div class="tilbage-button-container mars-tilbage-button" id="marsBackButton">
-                <button class="tilbage-button">Tilbage</button>
-                <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow">
+            <div class="icon-container">
+              <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid" />
             </div>
-        
-            <p class="mars-underside-tekst" id="marsP"> </p>
-            <img src="media/mars-rover.png" alt=" mars rover" class="mars-rover">
-            <img src="media/Mars-underside-image.png" alt="mars planet" class="mars-planet-underside">
-        
-        </section>
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-temperatur.webp"
+                alt=""
+                class="iconer temperatur" />
+            </div>
+          </figure>
+          <div class="information-icons">
+            <p class="kredsloeb">
+              Èt år på Mars svarer til cirka 1,88 år på Jorden.
+            </p>
+
+            <p class="timeOnPlanet">
+              Èn dag på Mars svarer til 24,6 timer på Jorden.
+            </p>
+
+            <p class="temperature">
+              Temperaturintervallet på Mars ligger mellem -87 og -5 °C
+            </p>
+          </div>
+          <div class="underside-button-div">
+            <button class="underside-button button-histore" id="marsButton">
+              Udforsk viden
+            </button>
+            <button class="underside-button button-geo">
+              Udforsk geografi
+            </button>
+          </div>
+          <ul class="navigation-side">
+            <li><a href="#solen">Solen</a></li>
+            <li><a href="#merkur">Merkur</a></li>
+            <li><a href="#venus">Venus</a></li>
+            <li><a href="#jorden">Jorden</a></li>
+            <li><a href="#mars">Mars</a></li>
+            <li><a href="#jupiter">Jupiter</a></li>
+            <li><a href="#saturn">Saturn</a></li>
+            <li><a href="#uranus">Uranus</a></li>
+            <li><a href="#neptun">Neptun</a></li>
+          </ul>
+        </div>
+        <figure class="scrolldown-box">
+          <div class="scrolldown-outer">
+            <div class="scrolldown-inner"></div>
+          </div>
+          <p>Scroll down</p>
+        </figure>
+      </section>
+
+      <section class="undersideMars slides">
+        <div
+          class="tilbage-button-container mars-tilbage-button"
+          id="marsBackButton">
+          <button class="tilbage-button">Tilbage</button>
+          <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow" />
+        </div>
+
+        <p class="mars-underside-tekst" id="marsP"></p>
+        <img src="media/mars-rover.png" alt=" mars rover" class="mars-rover" />
+        <img
+          src="media/Mars-underside-image.png"
+          alt="mars planet"
+          class="mars-planet-underside" />
+      </section>
     </section>
     <section id="jupiterSide">
-        <section class="slides" id="jupiter">
-            <h1>Jupiter</h1>
-            <div class="flex-div">
-                <div id="jupiterContainer" class="planetContainer"></div>
-                <figure class="info-grapic">
-                    <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
-                </figure>
-                <figure class="iconer-figure">
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
-                    </div>
-                </figure>
-                <div class="information-icons">
-                        <p class="kredsloeb">
-                            Èt år på Jupiter svarer til cirka 12 år på Jorden.
-                        </p>
-                        
-                        <p class="timeOnPlanet">
-                            Èn dag på Jupiter svarer til 9,8 timer på Jorden.
-                        </p>
-                        
-                        <p class="temperature">
-                            Temperaturintervallet på Jupiter ligger mellem cirka 15 og 20 °C
-                        </p>
-                </div>
-                <div class="underside-button-div">
-                    <button class="underside-button button-histore" id="jupiterButton">Udforsk viden</button>
-                    <button class="underside-button button-geo">Udforsk geografi</button>
-                </div>
-                <ul class="navigation-side">
-                    <li><a href="#solen">Solen</a></li>
-                    <li><a href="#merkur">Merkur</a></li>
-                    <li><a href="#venus">Venus</a></li>
-                    <li><a href="#jorden">Jorden</a></li>
-                    <li><a href="#mars">Mars</a></li>
-                    <li><a href="#jupiter">Jupiter</a></li>
-                    <li><a href="#saturn">Saturn</a></li>
-                    <li><a href="#uranus">Uranus</a></li>
-                    <li><a href="#neptun">Neptun</a></li>
-                </ul>
+      <section class="slides" id="jupiter">
+        <h1>Jupiter</h1>
+        <div class="flex-div">
+          <div id="jupiterContainer" class="planetContainer"></div>
+          <figure class="info-grapic">
+            <img
+              src="media/test-outerinfograpic-3points.png"
+              alt=""
+              class="info-cirkel" />
+          </figure>
+          <figure class="iconer-figure">
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-orbit.webp"
+                alt=""
+                class="iconer omloebstid" />
             </div>
-            <figure class="scrolldown-box">
-                <div class="scrolldown-outer">
-                    <div class="scrolldown-inner"></div>
-                </div>
-                <p>Scroll down</p>
-            </figure>
-        </section>
-    
-        <section class="undersideJupiter slides">
-            <div class="tilbage-button-container jupiter-tilbage-button" id="jupiterBackButton">
-                <button class="tilbage-button">Tilbage</button>
-                <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow">
+            <div class="icon-container">
+              <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid" />
             </div>
-            <p class="jupiter-underside-tekst" id="jupiterP"> </p>
-            <img src="media/planeter-2d/2d-jupiter.webp" alt="Jupiter planet" class="jupiter-planet">
-        </section>
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-temperatur.webp"
+                alt=""
+                class="iconer temperatur" />
+            </div>
+          </figure>
+          <div class="information-icons">
+            <p class="kredsloeb">
+              Èt år på Jupiter svarer til cirka 12 år på Jorden.
+            </p>
+
+            <p class="timeOnPlanet">
+              Èn dag på Jupiter svarer til 9,8 timer på Jorden.
+            </p>
+
+            <p class="temperature">
+              Temperaturintervallet på Jupiter ligger mellem cirka 15 og 20 °C
+            </p>
+          </div>
+          <div class="underside-button-div">
+            <button class="underside-button button-histore" id="jupiterButton">
+              Udforsk viden
+            </button>
+            <button class="underside-button button-geo">
+              Udforsk geografi
+            </button>
+          </div>
+          <ul class="navigation-side">
+            <li><a href="#solen">Solen</a></li>
+            <li><a href="#merkur">Merkur</a></li>
+            <li><a href="#venus">Venus</a></li>
+            <li><a href="#jorden">Jorden</a></li>
+            <li><a href="#mars">Mars</a></li>
+            <li><a href="#jupiter">Jupiter</a></li>
+            <li><a href="#saturn">Saturn</a></li>
+            <li><a href="#uranus">Uranus</a></li>
+            <li><a href="#neptun">Neptun</a></li>
+          </ul>
+        </div>
+        <figure class="scrolldown-box">
+          <div class="scrolldown-outer">
+            <div class="scrolldown-inner"></div>
+          </div>
+          <p>Scroll down</p>
+        </figure>
+      </section>
+
+      <section class="undersideJupiter slides">
+        <div
+          class="tilbage-button-container jupiter-tilbage-button"
+          id="jupiterBackButton">
+          <button class="tilbage-button">Tilbage</button>
+          <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow" />
+        </div>
+        <p class="jupiter-underside-tekst" id="jupiterP"></p>
+        <img
+          src="media/planeter-2d/2d-jupiter.webp"
+          alt="Jupiter planet"
+          class="jupiter-planet" />
+      </section>
     </section>
     <section id="saturnSide">
-        <section class="slides" id="saturn">
-            <h1>Saturn</h1>
-            <div class="flex-div">
-                <div id="saturnContainer" class="planetContainer"></div>
-                <figure class="info-grapic">
-                    <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
-                </figure>
-                <figure class="iconer-figure">
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
-                    </div>
-                </figure>
-                <div class="information-icons">
-                        <p class="kredsloeb">
-                            Èt år på Saturn svarer til cirka 30 år på Jorden.
-                        </p>
-                        
-                        <p class="timeOnPlanet">
-                            Èn dag på Saturn svarer til 10,2 timer på Jorden.
-                        </p>
-                        
-                        <p class="temperature">
-                            Gennemsnitstemperaturen på Saturn er -139 °C
-                        </p>
-                </div>
-                <div class="underside-button-div">
-                    <button class="underside-button button-histore" id="saturnButton">Udforsk viden</button>
-                    <button class="underside-button button-geo">udforsk Geografi</button>
-                </div>
-                <ul class="navigation-side">
-                    <li><a href="#solen">Solen</a></li>
-                    <li><a href="#merkur">Merkur</a></li>
-                    <li><a href="#venus">Venus</a></li>
-                    <li><a href="#jorden">Jorden</a></li>
-                    <li><a href="#mars">Mars</a></li>
-                    <li><a href="#jupiter">Jupiter</a></li>
-                    <li><a href="#saturn">Saturn</a></li>
-                    <li><a href="#uranus">Uranus</a></li>
-                    <li><a href="#neptun">Neptun</a></li>
-                </ul>
+      <section class="slides" id="saturn">
+        <h1>Saturn</h1>
+        <div class="flex-div">
+          <div id="saturnContainer" class="planetContainer"></div>
+          <figure class="info-grapic">
+            <img
+              src="media/test-outerinfograpic-3points.png"
+              alt=""
+              class="info-cirkel" />
+          </figure>
+          <figure class="iconer-figure">
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-orbit.webp"
+                alt=""
+                class="iconer omloebstid" />
             </div>
-            <figure class="scrolldown-box">
-                <div class="scrolldown-outer">
-                    <div class="scrolldown-inner">
-                    </div>
-                </div>
-                <p>Scroll down</p>
-            </figure>
-        </section>
-    
-        <section class="undersideSaturn slides">
-            <div class="tilbage-button-container saturn-tilbage-button" id="saturnBackButton">
-                <button class="tilbage-button">Back</button>
-                <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow">
+            <div class="icon-container">
+              <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid" />
             </div>
-    
-            <p class="saturn-underside-tekst" id="saturnP"> </p>
-            <img src="media/saturen-ring-01.webp" alt="Saturn ring" class="saturn-ring">
-        </section>
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-temperatur.webp"
+                alt=""
+                class="iconer temperatur" />
+            </div>
+          </figure>
+          <div class="information-icons">
+            <p class="kredsloeb">
+              Èt år på Saturn svarer til cirka 30 år på Jorden.
+            </p>
+
+            <p class="timeOnPlanet">
+              Èn dag på Saturn svarer til 10,2 timer på Jorden.
+            </p>
+
+            <p class="temperature">
+              Gennemsnitstemperaturen på Saturn er -139 °C
+            </p>
+          </div>
+          <div class="underside-button-div">
+            <button class="underside-button button-histore" id="saturnButton">
+              Udforsk viden
+            </button>
+            <button class="underside-button button-geo">
+              udforsk Geografi
+            </button>
+          </div>
+          <ul class="navigation-side">
+            <li><a href="#solen">Solen</a></li>
+            <li><a href="#merkur">Merkur</a></li>
+            <li><a href="#venus">Venus</a></li>
+            <li><a href="#jorden">Jorden</a></li>
+            <li><a href="#mars">Mars</a></li>
+            <li><a href="#jupiter">Jupiter</a></li>
+            <li><a href="#saturn">Saturn</a></li>
+            <li><a href="#uranus">Uranus</a></li>
+            <li><a href="#neptun">Neptun</a></li>
+          </ul>
+        </div>
+        <figure class="scrolldown-box">
+          <div class="scrolldown-outer">
+            <div class="scrolldown-inner"></div>
+          </div>
+          <p>Scroll down</p>
+        </figure>
+      </section>
+
+      <section class="undersideSaturn slides">
+        <div
+          class="tilbage-button-container saturn-tilbage-button"
+          id="saturnBackButton">
+          <button class="tilbage-button">Back</button>
+          <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow" />
+        </div>
+
+        <p class="saturn-underside-tekst" id="saturnP"></p>
+        <img
+          src="media/saturen-ring-01.webp"
+          alt="Saturn ring"
+          class="saturn-ring" />
+      </section>
     </section>
     <section id="uranusSide">
-        <section class="slides" id="uranus">
-            <h1>Uranus</h1>
-            <div class="flex-div">
-                <div id="uranusContainer" class="planetContainer"></div>
-                <figure class="info-grapic">
-                    <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
-                </figure>
-                <figure class="iconer-figure">
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
-                    </div>
-                </figure>
-                <div class="information-icons">
-                        <p class="kredsloeb">
-                            Èt år på Uranus svarer til cirka 84 år på Jorden.
-                        </p>
-                        
-                        <p class="timeOnPlanet">
-                            Èn dag på Uranus svarer til cirka 18 timer på Jorden.
-                        </p>
-                        
-                        <p class="temperature">
-                            Gennemsnitstemperaturen på Uranus er -197 °C
-                        </p>
-                </div>
-                <div class="underside-button-div">
-                    <button class="underside-button button-histore" id="uranusButton">Udforsk viden</button>
-                    <button class="underside-button button-geo">udforsk Geografi</button>
-                </div>
-                <ul class="navigation-side">
-                    <li><a href="#solen">Solen</a></li>
-                    <li><a href="#merkur">Merkur</a></li>
-                    <li><a href="#venus">Venus</a></li>
-                    <li><a href="#jorden">Jorden</a></li>
-                    <li><a href="#mars">Mars</a></li>
-                    <li><a href="#jupiter">Jupiter</a></li>
-                    <li><a href="#saturn">Saturn</a></li>
-                    <li><a href="#uranus">Uranus</a></li>
-                    <li><a href="#neptun">Neptun</a></li>
-                </ul>
+      <section class="slides" id="uranus">
+        <h1>Uranus</h1>
+        <div class="flex-div">
+          <div id="uranusContainer" class="planetContainer"></div>
+          <figure class="info-grapic">
+            <img
+              src="media/test-outerinfograpic-3points.png"
+              alt=""
+              class="info-cirkel" />
+          </figure>
+          <figure class="iconer-figure">
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-orbit.webp"
+                alt=""
+                class="iconer omloebstid" />
             </div>
-            <figure class="scrolldown-box">
-                <div class="scrolldown-outer">
-                    <div class="scrolldown-inner">
-                    </div>
-                </div>
-                <p>Scroll down</p>
-            </figure>
-        </section>
-    
-        <section class="undersideUranus slides">
-            <div class="tilbage-button-container uranus-tilbage-button" id="uranusBackButton">
-                <button class="tilbage-button">Back</button>
-                <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow">
+            <div class="icon-container">
+              <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid" />
             </div>
-            <p class="uranus-underside-tekst" id="uranusP"></p>
-            <img src="media/uranus_kopi_1.png" alt="Uranus planet" class="uranus-planet">
-            <img src="media/aktiv-1-1.png" alt="uranus ring" class="uranus-ring">
-        </section>
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-temperatur.webp"
+                alt=""
+                class="iconer temperatur" />
+            </div>
+          </figure>
+          <div class="information-icons">
+            <p class="kredsloeb">
+              Èt år på Uranus svarer til cirka 84 år på Jorden.
+            </p>
+
+            <p class="timeOnPlanet">
+              Èn dag på Uranus svarer til cirka 18 timer på Jorden.
+            </p>
+
+            <p class="temperature">
+              Gennemsnitstemperaturen på Uranus er -197 °C
+            </p>
+          </div>
+          <div class="underside-button-div">
+            <button class="underside-button button-histore" id="uranusButton">
+              Udforsk viden
+            </button>
+            <button class="underside-button button-geo">
+              udforsk Geografi
+            </button>
+          </div>
+          <ul class="navigation-side">
+            <li><a href="#solen">Solen</a></li>
+            <li><a href="#merkur">Merkur</a></li>
+            <li><a href="#venus">Venus</a></li>
+            <li><a href="#jorden">Jorden</a></li>
+            <li><a href="#mars">Mars</a></li>
+            <li><a href="#jupiter">Jupiter</a></li>
+            <li><a href="#saturn">Saturn</a></li>
+            <li><a href="#uranus">Uranus</a></li>
+            <li><a href="#neptun">Neptun</a></li>
+          </ul>
+        </div>
+        <figure class="scrolldown-box">
+          <div class="scrolldown-outer">
+            <div class="scrolldown-inner"></div>
+          </div>
+          <p>Scroll down</p>
+        </figure>
+      </section>
+
+      <section class="undersideUranus slides">
+        <div
+          class="tilbage-button-container uranus-tilbage-button"
+          id="uranusBackButton">
+          <button class="tilbage-button">Back</button>
+          <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow" />
+        </div>
+        <p class="uranus-underside-tekst" id="uranusP"></p>
+        <img
+          src="media/uranus_kopi_1.png"
+          alt="Uranus planet"
+          class="uranus-planet" />
+        <img src="media/aktiv-1-1.png" alt="uranus ring" class="uranus-ring" />
+      </section>
     </section>
-    
+
     <section id="neptuneSide">
-        <section class="slides" id="neptun">
-            <h1>Neptun</h1>
-            <div class="flex-div">
-                <div id="neptuneContainer" class="planetContainer"></div>
-                <figure class="info-grapic">
-                    <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
-                </figure>
-                <figure class="iconer-figure">
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    </div>
-                    <div class="icon-container">
-                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
-                    </div>
-                </figure>
-                <div class="information-icons">
-                        <p class="kredsloeb">
-                            Èt år på Neptun svarer til cirka 163 år på Jorden.
-                        </p>
-                        
-                        <p class="timeOnPlanet">
-                            Èn dag på Neptun svarer til cirka 19 timer på Jorden.
-                        </p>
-                        
-                        <p class="temperature">
-                            Neptun har en gennemsnitstemperatur på -197 °C
-                        </p>
-                </div>
-                <div class="underside-button-div">
-                    <button class="underside-button button-histore" id="neptuneButton">Udforsk viden</button>
-                    <button class="underside-button button-geo">udforsk Geografi</button>
-                </div>
-                <ul class="navigation-side">
-                    <li><a href="#solen">Solen</a></li>
-                    <li><a href="#merkur">Merkur</a></li>
-                    <li><a href="#venus">Venus</a></li>
-                    <li><a href="#jorden">Jorden</a></li>
-                    <li><a href="#mars">Mars</a></li>
-                    <li><a href="#jupiter">Jupiter</a></li>
-                    <li><a href="#saturn">Saturn</a></li>
-                    <li><a href="#uranus">Uranus</a></li>
-                    <li><a href="#neptune">Neptune</a></li>
-                </ul>
+      <section class="slides" id="neptun">
+        <h1>Neptun</h1>
+        <div class="flex-div">
+          <div id="neptuneContainer" class="planetContainer"></div>
+          <figure class="info-grapic">
+            <img
+              src="media/test-outerinfograpic-3points.png"
+              alt=""
+              class="info-cirkel" />
+          </figure>
+          <figure class="iconer-figure">
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-orbit.webp"
+                alt=""
+                class="iconer omloebstid" />
             </div>
-            <figure class="scrolldown-box">
-                <div class="scrolldown-outer">
-                    <div class="scrolldown-inner">
-                    </div>
-                </div>
-                <p>Scroll down</p>
-            </figure>
-        </section>
-    
-        <section class="undersideNeptune slides">
-            <div class="tilbage-button-container neptune-tilbage-button" id="neptuneBackButton">
-                <button class="tilbage-button">Back</button>
-                <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow">
+            <div class="icon-container">
+              <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid" />
             </div>
-            <p class="neptune-underside-tekst" id="neptuneP"></p>
-            <img src="media/planeter-2d/2d-neptun.webp" alt="Neptune planet" class="neptune-planet">
-        </section>
+            <div class="icon-container">
+              <img
+                src="media/ikoner/ikon-temperatur.webp"
+                alt=""
+                class="iconer temperatur" />
+            </div>
+          </figure>
+          <div class="information-icons">
+            <p class="kredsloeb">
+              Èt år på Neptun svarer til cirka 163 år på Jorden.
+            </p>
+
+            <p class="timeOnPlanet">
+              Èn dag på Neptun svarer til cirka 19 timer på Jorden.
+            </p>
+
+            <p class="temperature">
+              Neptun har en gennemsnitstemperatur på -197 °C
+            </p>
+          </div>
+          <div class="underside-button-div">
+            <button class="underside-button button-histore" id="neptuneButton">
+              Udforsk viden
+            </button>
+            <button class="underside-button button-geo">
+              udforsk Geografi
+            </button>
+          </div>
+          <ul class="navigation-side">
+            <li><a href="#solen">Solen</a></li>
+            <li><a href="#merkur">Merkur</a></li>
+            <li><a href="#venus">Venus</a></li>
+            <li><a href="#jorden">Jorden</a></li>
+            <li><a href="#mars">Mars</a></li>
+            <li><a href="#jupiter">Jupiter</a></li>
+            <li><a href="#saturn">Saturn</a></li>
+            <li><a href="#uranus">Uranus</a></li>
+            <li><a href="#neptune">Neptune</a></li>
+          </ul>
+        </div>
+        <figure class="scrolldown-box">
+          <div class="scrolldown-outer">
+            <div class="scrolldown-inner"></div>
+          </div>
+          <p>Scroll down</p>
+        </figure>
+      </section>
+
+      <section class="undersideNeptune slides">
+        <div
+          class="tilbage-button-container neptune-tilbage-button"
+          id="neptuneBackButton">
+          <button class="tilbage-button">Back</button>
+          <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow" />
+        </div>
+        <p class="neptune-underside-tekst" id="neptuneP"></p>
+        <img
+          src="media/planeter-2d/2d-neptun.webp"
+          alt="Neptune planet"
+          class="neptune-planet" />
+      </section>
     </section>
-
-
-
 
     <!-- SLUTSIDE -->
 
     <section class="slides">
-        <section class="slutside-section">
-            <h1 class="slutside-h1">Du befinder dig på <br> kanten af Solsystemet</h1>
-            <br>
-            <h2 class="slutside-h2">Hvor vil du hen nu?</h2>
-              
-            <div class="slutside-button-div">
-                <a href="pages/404.html">
-                  <button class="slutside-button slutside-button-uni">Rejs videre ud i Universet</button>  
-                </a>
-                <a href="/">
-                  <button class="slutside-button slutside-button-sol">Udforsk Solsystemet igen</button>  
-                </a>    
-            </div> 
-            <img class="slutside-billede" src="media/slutside-billede.webp" alt="Planeter i Solsystemet">
-        </section>
-    
+      <section class="slutside-section">
+        <h1 class="slutside-h1">
+          Du befinder dig på <br />
+          kanten af Solsystemet
+        </h1>
+        <h2 class="slutside-h2">Hvor vil du hen nu?</h2>
 
+        <div class="slutside-button-div">
+          <a href="pages/404.html">
+            <button class="slutside-button slutside-button-uni">
+              Rejs videre ud i Universet
+            </button>
+          </a>
+          <a href="/">
+            <button class="slutside-button slutside-button-sol">
+              Udforsk Solsystemet igen
+            </button>
+          </a>
 
-
-        
-   
+          <img
+            class="slutside-billede"
+            src="media/slutside-billede.webp"
+            alt="Planeter i Solsystemet" />
+        </div>
+      </section>
     </section>
-    
-   
-    <script src="js/scrolldown.js"></script>
-    <script src="js/underside.js"> </script>
-    <script src="js/ikoner.js"></script>
-    
-</body>
+
+    <!-- JS -->
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/solen.js"></script>
+    <script type="module" src="js/merkur.js"></script>
+    <script type="module" src="js/venus.js"></script>
+    <script type="module" src="js/jorden.js"></script>
+    <script type="module" src="js/mars.js"></script>
+    <script type="module" src="js/jupiter.js"></script>
+    <script type="module" src="js/saturn.js"></script>
+    <script type="module" src="js/uranus.js"></script>
+    <script type="module" src="js/neptune.js"></script>
+    <script type="module" src="js/scrolldown.js"></script>
+    <script type="module" src="js/underside.js"></script>
+    <script type="module" src="js/ikoner.js"></script>
+  </body>
 </html>

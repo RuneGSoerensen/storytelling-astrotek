@@ -1,8 +1,17 @@
 {
-  "dependencies": {
-    "three": "^0.163.0"
+  "name": "storytelling-astrotek",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^5.2.10"
+  },
+  "dependencies": {
+    "three": "^0.163.0"
   }
 }
