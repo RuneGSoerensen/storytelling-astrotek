@@ -896,18 +896,19 @@ a {
 }
 
 .slutside-section {
+
+  background-image: url(../media/slutside-billede.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.slutside{
   background-image: url(../media/background/background_11b.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
-main {
-  width: 100vh;
-  background-image: url(../media/background/background_11b.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .slutside-billede {
   width: 100%;

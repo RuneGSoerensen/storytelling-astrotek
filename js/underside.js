@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // setTimeout på en function som fjerne elementerne lavet af createElements
     setTimeout(() => {
       forsiden.removeChild(undersideSection);
-    }, 2000);
+    }, 1500);
   }
 
   //  MERKUR
