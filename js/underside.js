@@ -147,4 +147,46 @@ function reverseAnimations(undersideSection) {
         document.body.classList.remove("bodystuck");
     }
 
+    // Mars
+    const marsSection = document.getElementById("mars");
+    const marsButton = document.getElementById("marsButton");
+    const marsUndersideSection = document.getElementsByClassName("undersideMars")[0];
+    const marsBackbutton = document.getElementById("marsBackButton");
+
+    marsButton.addEventListener("click", () => {
+        createMars();
+    });
+
+    function createMars() {
+        fetch(url)
+        .then(res => res.json())
+        .then(json => {
+
+            const marsUndersideTekst = document.getElementById("marsP");
+            marsUndersideTekst.innerHTML = `${json[4].history}`;
+        
+            document.body.classList.add("bodystuck");
+
+            marsSection.style.transition = "transform 1s ease-in-out";
+            marsSection.style.transform = "translate(-100%)";
+            marsUndersideSection.style.transition = "transform 1s ease-in-out";
+            marsUndersideSection.style.transform = "translate(-100%)";
+        })
+        .catch(error => console.error("error:", error));
+    }
+
+    marsBackbutton.addEventListener("click", () => {
+        reverseMarsAnimations(marsUndersideSection);
+    });
+
+    function reverseMarsAnimations(marsUndersideSection) {
+        const marsSection = document.getElementById("mars");
+        marsSection.style.transition = "transform 1s ease-in-out";
+        marsSection.style.transform = "translate(0)";
+
+        marsUndersideSection.style.transition = "transform 1s ease-in-out";
+        marsUndersideSection.style.transform = "translate(0%)";
+        document.body.classList.remove("bodystuck");
+    }
+
 });
