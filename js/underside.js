@@ -220,7 +220,7 @@ function createJorden() {
         .then(res => res.json())
         .then(json => {
             const jordenUndersideTekst = document.getElementById("jordenP");
-            jordenUndersideTekst.innerHTML = `${json[3].funFact}`;
+            jordenUndersideTekst.innerHTML = `${json[3].history}`;
             
             document.body.classList.add("bodystuck");
             
@@ -457,9 +457,4 @@ function reverseNeptuneAnimations(undersideNeptuneSection) {
 }
 
 });
-
-
-
-
-
 

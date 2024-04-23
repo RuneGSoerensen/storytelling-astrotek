@@ -4,36 +4,35 @@
 <head>
     <!-- META -->
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="title" content="Steno-Museum Interaktivt Astrotek">
-        <meta name="description" content="Mangler tekst">
-        <meta name="keywords" content="mangler tekst">
-        <meta name="robots" content="index, follow">
-        <meta name="language" content="Danish">
-        <meta name="geo.region" content="DK" >
-        <meta name="geo.placename" content="Aarhus" >
-        <meta name="geo.position" content="56.169837;10.216097" >
-        <meta name="ICBM" content="56.169837, 10.216097" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Steno-Museum Interaktivt Astrotek">
+    <meta name="description" content="Mangler tekst">
+    <meta name="keywords" content="mangler tekst">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Danish">
+    <meta name="geo.region" content="DK" >
+    <meta name="geo.placename" content="Aarhus" >
+    <meta name="geo.position" content="56.169837;10.216097" >
+    <meta name="ICBM" content="56.169837, 10.216097" >
 
-        <!-- TITLE -->
-        <title>Steno-Museum Interaktivt Astrotek</title>
+    <!-- TITLE -->
+    <title>Steno-Museum Interaktivt Astrotek</title>
 
-        <!-- FAVICON, CSS OG JAVASCRIPT -->
-        <link rel="icon" type="image/ico" href="media/ikoner/favicon.ico">
-        <link rel="stylesheet" href="css/main.css">
-        <script type="module" src="js/script.js"></script>
-        <script type="module" src="js/solen.js"></script>
-        <script type="module" src="js/merkur.js"></script>
-        <script type="module" src="js/venus.js"></script>
-        <script type="module" src="js/jorden.js"></script>
-        <script type="module" src="js/mars.js"></script>
-        <script type="module" src="js/jupiter.js"></script>
-        <script type="module" src="js/saturn.js"></script>
-        <script type="module" src="js/uranus.js"></script>
-        <script type="module" src="js/neptune.js"></script>
-    
+    <!-- FAVICON, CSS OG JAVASCRIPT -->
+    <link rel="icon" type="image/ico" href="media/ikoner/favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="module" src="js/quickFacts.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/solen.js"></script>
+    <script type="module" src="js/merkur.js"></script>
+    <script type="module" src="js/venus.js"></script>
+    <script type="module" src="js/jorden.js"></script>
+    <script type="module" src="js/mars.js"></script>
+    <script type="module" src="js/jupiter.js"></script>
+    <script type="module" src="js/saturn.js"></script>
+    <script type="module" src="js/uranus.js"></script>
+    <script type="module" src="js/neptune.js"></script>
 </head>
-
 
 <body>
 
@@ -54,7 +53,7 @@
         </section>
      
         <!-- SEKTION FOR SOLEN -->
-        <main id="forsiden">
+        <section id="forsiden">
         <section class="slides" id="forsideSektion">
             <h1>Solen</h1>
             <div class="flex-div">
@@ -74,14 +73,14 @@
                     </div>
                 </figure>
                 <div class="information-icons">
-                        <p>
-                            Det her er top-infoLorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
+                        <p class="timeOnPlanet">
+                            
                         </p>
-                        <p class="mid-info information-text">
-                            Det her er mid infoLorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
+                        <p class="kredsloeb">
+                            
                         </p>
-                        <p class="bottom-info information-text">
-                            Det her er bottom infoLorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
+                        <p class="temperature">
+                            
                         </p>
                 </div>
                 <div class="underside-button-div">
@@ -108,12 +107,12 @@
                 </div>
                 <p>Scroll down</p>
             </figure>
-       </main>
+       </section>
         </section>
 
 
         <!-- SEKTION FOR MERKUR -->
-    <main id="merkurSide">
+    <section id="merkurSide">
         <section class="slides" id="merkur">
             <h1>Merkur</h1>
             <div class="flex-div">
@@ -177,9 +176,9 @@
             <img class="merkur-funfact" src="media/funfact.webp" alt="Talebobbel">
             
         </section>
-    </main>
+    </section>
     <!-- section af venus -->
-    <main id="venusSide">
+    <section id="venusSide">
         <section class="slides" id="venus">
             <h1>Venus</h1>
             <div class="flex-div">
@@ -236,11 +235,11 @@
             </div>
     
             <p class="venus-underside-tekst" id="venusP"> </p>
-            <img src="media/venus-image.png" alt="Venus planet" class="venus-planet">
+            <img src="media/planeter-2d/2d-venus.webp" alt="Venus planet" class="venus-planet">
           
         </section>
-    </main>
-    <main id="jordenSide">
+    </section>
+    <section id="jordenSide">
         <section class="slides" id="jorden">
             <h1>Jorden</h1>
             <div class="flex-div">
@@ -294,11 +293,12 @@
                 <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow">
             </div>
             <p class="jorden-underside-tekst" id="jordenP"> </p>
+            <img src="media/planeter-2d/2d-earth.webp" alt="planet jorden" class="jorden-2d">
 
         </section>
-    </main>
+    </section>
     
-        <main id="marsSide">
+        <section id="marsSide">
         <section class="slides" id="mars">
             <h1>Mars</h1>
             <div class="flex-div">
@@ -364,8 +364,8 @@
             <img src="media/Mars-underside-image.png" alt="mars planet" class="mars-planet-underside">
         
         </section>
-    </main>
-    <main id="jupiterSide">
+    </section>
+    <section id="jupiterSide">
         <section class="slides" id="jupiter">
             <h1>Jupiter</h1>
             <div class="flex-div">
@@ -419,10 +419,10 @@
                 <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow">
             </div>
             <p class="jupiter-underside-tekst" id="jupiterP"> </p>
-            <img src="media/jupiter-planet-image.png" alt="Jupiter planet" class="jupiter-planet">
+            <img src="media/planeter-2d/2d-jupiter.webp" alt="Jupiter planet" class="jupiter-planet">
         </section>
-    </main>
-    <main id="saturnSide">
+    </section>
+    <section id="saturnSide">
         <section class="slides" id="saturn">
             <h1>Saturn</h1>
             <div class="flex-div">
@@ -478,10 +478,10 @@
             </div>
     
             <p class="saturn-underside-tekst" id="saturnP"> </p>
-            <img src="media/saturn-image.jpg" alt="Saturn planet" class="saturn-planet">
+            <img src="media/saturen-ring-01.webp" alt="saturn ring" class="saturn-ring">
         </section>
-    </main>
-    <main id="uranusSide">
+    </section>
+    <section id="uranusSide">
         <section class="slides" id="uranus">
             <h1>Uranus</h1>
             <div class="flex-div">
@@ -536,11 +536,12 @@
                 <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow">
             </div>
             <p class="uranus-underside-tekst" id="uranusP"></p>
-            <img src="media/uranus-image.jpg" alt="Uranus planet" class="uranus-planet">
+            <img src="media/aktiv-1-1.png" alt="uranus planet" class="uranus-ring">
+            <img src="media/uranus_kopi_1.png" alt="uranus planet" class="uranus-planet">
         </section>
-    </main>
+    </section>
     
-    <main id="neptuneSide">
+    <section id="neptuneSide">
         <section class="slides" id="neptune">
             <h1>Neptune</h1>
             <div class="flex-div">
@@ -595,7 +596,7 @@
                 <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow">
             </div>
             <p class="neptune-underside-tekst" id="neptuneP"></p>
-            <img src="media/neptune-image.jpg" alt="Neptune planet" class="neptune-planet">
+            <img src="media/planeter-2d/2d-neptun.webp" alt="Neptune planet" class="neptune-planet">
         </section>
     </main>
 

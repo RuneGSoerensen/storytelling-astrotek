@@ -402,24 +402,27 @@ a{
 }
 
 .undersideVenus {
-  background-image: url(/media/background/background_venus.webp);
+  background-image: url(/media/background/background_1B.webp);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
+  grid-template-rows: 1fr 1fr;
   width: 100vw;
   transform: translate(0);
 }
 
 .venus-planet {
-  height: 70vh;
-  grid-area: 1/2/2/3;
-  align-self: end;
+  height: 100vh;
+  grid-area: 2/1/3/2;
+  justify-self: center;
+  transform: translate(0, 35vh);
 }
 
 .venus-underside-tekst {
   grid-area: 1/1/2/2;
   justify-self: center;
   align-self: center;
+  width: 20rem;
+  margin-right: 40rem;
+  transform: translate(0, 20vw);
 }
 
 .venus-tilbage-button {
@@ -442,7 +445,7 @@ a{
 }
 
 .undersideJorden {
-  background-image: url(/media/background/background_jorden.webp);
+  background-image: url(/media/background/background_1B.webp);
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
@@ -450,16 +453,19 @@ a{
   transform: translate(0);
 }
 
-.jorden-image {
+.jorden-2d {
   height: 70vh;
   grid-area: 1/2/2/3;
-  align-self: end;
+  align-self: center;
+  transform: translate(-15vw);
 }
 
 .jorden-underside-tekst {
   grid-area: 1/1/2/2;
   justify-self: center;
   align-self: center;
+  width: 20rem;
+
 }
 
 .jorden-tilbage-button {
@@ -527,7 +533,7 @@ align-self: end;
 }
 
 .undersideJupiter {
-  background-image: url(/media/background/background_jupiter.webp);
+  background-image: url(/media/background/background_1B.webp);
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
@@ -537,19 +543,21 @@ align-self: end;
 
 .jupiter-planet {
   height: 70vh;
-  grid-area: 1/2/2/3;
-  align-self: end;
+  grid-area: 1/1/2/2;
+  align-self: top;
+  transform: translate(0, -20vh);
 }
 
 .jupiter-underside-tekst {
-  grid-area: 1/1/2/2;
+  grid-area: 1/2/2/3;
   justify-self: center;
   align-self: center;
 }
 
 .jupiter-tilbage-button {
   grid-area: 1/1/2/2;
-  justify-self: top;
+margin-bottom: 4rem;
+  align-self: end;
 }
 
 /* style af saturn */
@@ -569,7 +577,7 @@ align-self: end;
 }
 
 .undersideSaturn {
-  background-image: url(/media/background/background_saturn.jpg);
+  background-image: url(/media/background/background_1B.webp);
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
@@ -577,21 +585,27 @@ align-self: end;
   transform: translate(0);
 }
 
-.saturn-planet {
-  height: 70vh;
-  grid-area: 1/2/2/3;
-  align-self: end;
+.saturn-ring {
+  height: 100vh;
+ grid-area: 1/1/2/2;
+ transform: translate(-10vw);
+  
 }
 
 .saturn-underside-tekst {
   grid-area: 1/1/2/2;
-  justify-self: center;
+  justify-self: end;
   align-self: center;
+  width: 20rem;
+  margin-right: 30vw;
+  margin-bottom: 30vh;
+
 }
 
 .saturn-tilbage-button {
   grid-area: 1/1/2/2;
   justify-self: top;
+  z-index: 2;
 }
 
 /* style af uranus */
@@ -610,7 +624,7 @@ align-self: end;
 }
 
 .undersideUranus {
-  background-image: url(/media/background/background_uranus.webp);
+  background-image: url(/media/background/background_1B.webp);
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
@@ -619,15 +633,24 @@ align-self: end;
 }
 
 .uranus-planet {
-  height: 70vh;
+  height: 80vh;
   grid-area: 1/2/2/3;
   align-self: end;
+  z-index: 2;
+  transform: translate(0, 10vh);
+  
+}
+.uranus-ring{
+  width: 80vw;
+  position: absolute;
+  transform: translate(20vw, 70vh);
 }
 
 .uranus-underside-tekst {
   grid-area: 1/1/2/2;
   justify-self: center;
   align-self: center;
+  width: 20rem;
 }
 
 .uranus-tilbage-button {
@@ -652,7 +675,7 @@ align-self: end;
 }
 
 .undersideNeptune {
-  background-image: url(/media/background/background_neptune.webp);
+  background-image: url(/media/background/background_1B.webp);
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
@@ -661,15 +684,18 @@ align-self: end;
 }
 
 .neptune-planet {
-  height: 70vh;
+  height: 80vh;
   grid-area: 1/2/2/3;
-  align-self: end;
+  align-self: top;
+  transform: translate(-20vw, -30vh);
 }
 
 .neptune-underside-tekst {
   grid-area: 1/1/2/2;
-  justify-self: center;
-  align-self: center;
+  justify-self: start;
+  align-self: end;
+  margin-bottom: 15rem;
+  margin-left: 10rem;
 }
 
 .neptune-tilbage-button {
