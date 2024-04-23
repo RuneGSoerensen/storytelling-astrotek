@@ -749,3 +749,12 @@ margin-bottom: 4rem;
 
 }
 
+main{
+  width: 100vh;
+}
+.slutside-section{
+  background-image: url(/media/slutside-billede.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
