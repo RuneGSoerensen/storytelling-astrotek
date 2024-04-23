@@ -22,7 +22,7 @@ let objToRender = "solen";
 const loader = new GLTFLoader();
 
 //Load the file
-loader.load(`../models/${objToRender}/scene.gltf`, function (gltf) {
+loader.load(`./models/${objToRender}/scene.gltf`, function (gltf) {
   //If the file is loaded, add it to the scene
   object = gltf.scene;
   scene.add(object);
