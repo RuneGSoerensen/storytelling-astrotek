@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const informationWheel = document.querySelector(".information-wheel");
 
   // Fetch the JSON data from the file
-  fetch("./json/planeter.json")
+  fetch("json/planeter.json")
     .then(res => res.json())
     .then(planetData => {
       // Get the three images
