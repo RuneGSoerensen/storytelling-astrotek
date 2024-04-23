@@ -132,6 +132,9 @@ function reverseAnimations(undersideSection) {
             const merkurUndersideTekst = document.getElementById("merkurP");
             merkurUndersideTekst.innerHTML = `${json[1].history}`;
 
+            const merkurUndersideFunFact = document.getElementById("merkurFunFact");
+            merkurUndersideFunFact.innerHTML = `${json[1].funFact}`;
+            
             document.body.classList.add("bodystuck");
 
             merkurSection.style.transition = "transform 1s ease-in-out";
@@ -142,8 +145,7 @@ function reverseAnimations(undersideSection) {
         .catch(error => console.error("error:", error));
     }
 
-    const merkurUndersideFunFact = document.getElementById("merkurFunFact");
-    merkurUndersideTekst.innerHTML = `${json[1].funFact}`;
+   
 
 
     merkurBackbutton.addEventListener("click", () => {
