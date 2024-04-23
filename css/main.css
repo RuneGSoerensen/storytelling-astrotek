@@ -633,13 +633,17 @@ margin-bottom: 4rem;
 }
 
 .uranus-planet {
-  height: 70vh;
+  height: 80vh;
   grid-area: 1/2/2/3;
   align-self: end;
+  z-index: 2;
+  transform: translate(0, 10vh);
+  
 }
 .uranus-ring{
-  width: 70vw;
+  width: 80vw;
   position: absolute;
+  transform: translate(20vw, 70vh);
 }
 
 .uranus-underside-tekst {
@@ -671,7 +675,7 @@ margin-bottom: 4rem;
 }
 
 .undersideNeptune {
-  background-image: url(/media/background/background_neptune.webp);
+  background-image: url(/media/background/background_1B.webp);
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
@@ -680,15 +684,18 @@ margin-bottom: 4rem;
 }
 
 .neptune-planet {
-  height: 70vh;
+  height: 80vh;
   grid-area: 1/2/2/3;
-  align-self: end;
+  align-self: top;
+  transform: translate(-20vw, -30vh);
 }
 
 .neptune-underside-tekst {
   grid-area: 1/1/2/2;
-  justify-self: center;
-  align-self: center;
+  justify-self: start;
+  align-self: end;
+  margin-bottom: 15rem;
+  margin-left: 10rem;
 }
 
 .neptune-tilbage-button {
