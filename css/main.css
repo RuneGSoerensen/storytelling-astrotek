@@ -402,7 +402,7 @@ a{
 }
 
 .undersideVenus {
-  background-image: url(/media/background/backgroundtest.png);
+  background-image: url(/media/background/background_venus.webp);
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
@@ -423,6 +423,46 @@ a{
 }
 
 .venus-tilbage-button {
+  grid-area: 1/1/2/2;
+  justify-self: top;
+}
+/* style af undersiden jorden */
+#jordenSide {
+  display: flex;
+  height: 100vh;
+  width: 200vw;
+}
+
+.undersideJorden {
+  flex: 1;
+}
+
+#jorden {
+  flex: 1;
+}
+
+.undersideJorden {
+  background-image: url(/media/background/background_jorden.webp);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(0);
+}
+
+.jorden-image {
+  height: 70vh;
+  grid-area: 1/2/2/3;
+  align-self: end;
+}
+
+.jorden-underside-tekst {
+  grid-area: 1/1/2/2;
+  justify-self: center;
+  align-self: center;
+}
+
+.jorden-tilbage-button {
   grid-area: 1/1/2/2;
   justify-self: top;
 }
@@ -467,6 +507,172 @@ align-self: end;
   align-self: center;
 }
 .mars-tilbage-button{
+  grid-area: 1/1/2/2;
+  justify-self: top;
+}
+
+/* style af jupiter */
+#jupiterSide {
+  display: flex;
+  height: 100vh;
+  width: 200vw;
+}
+
+.undersideJupiter {
+  flex: 1;
+}
+
+#jupiter {
+  flex: 1;
+}
+
+.undersideJupiter {
+  background-image: url(/media/background/background_jupiter.webp);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(0);
+}
+
+.jupiter-planet {
+  height: 70vh;
+  grid-area: 1/2/2/3;
+  align-self: end;
+}
+
+.jupiter-underside-tekst {
+  grid-area: 1/1/2/2;
+  justify-self: center;
+  align-self: center;
+}
+
+.jupiter-tilbage-button {
+  grid-area: 1/1/2/2;
+  justify-self: top;
+}
+
+/* style af saturn */
+
+#saturnSide {
+  display: flex;
+  height: 100vh;
+  width: 200vw;
+}
+
+.undersideSaturn {
+  flex: 1;
+}
+
+#saturn {
+  flex: 1;
+}
+
+.undersideSaturn {
+  background-image: url(/media/background/background_saturn.jpg);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(0);
+}
+
+.saturn-planet {
+  height: 70vh;
+  grid-area: 1/2/2/3;
+  align-self: end;
+}
+
+.saturn-underside-tekst {
+  grid-area: 1/1/2/2;
+  justify-self: center;
+  align-self: center;
+}
+
+.saturn-tilbage-button {
+  grid-area: 1/1/2/2;
+  justify-self: top;
+}
+
+/* style af uranus */
+#uranusSide {
+  display: flex;
+  height: 100vh;
+  width: 200vw;
+}
+
+.undersideUranus {
+  flex: 1;
+}
+
+#uranus {
+  flex: 1;
+}
+
+.undersideUranus {
+  background-image: url(/media/background/background_uranus.webp);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(0);
+}
+
+.uranus-planet {
+  height: 70vh;
+  grid-area: 1/2/2/3;
+  align-self: end;
+}
+
+.uranus-underside-tekst {
+  grid-area: 1/1/2/2;
+  justify-self: center;
+  align-self: center;
+}
+
+.uranus-tilbage-button {
+  grid-area: 1/1/2/2;
+  justify-self: top;
+}
+
+/* style af neptun */
+
+#neptuneSide {
+  display: flex;
+  height: 100vh;
+  width: 200vw;
+}
+
+.undersideNeptune {
+  flex: 1;
+}
+
+#neptune {
+  flex: 1;
+}
+
+.undersideNeptune {
+  background-image: url(/media/background/background_neptune.webp);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(0);
+}
+
+.neptune-planet {
+  height: 70vh;
+  grid-area: 1/2/2/3;
+  align-self: end;
+}
+
+.neptune-underside-tekst {
+  grid-area: 1/1/2/2;
+  justify-self: center;
+  align-self: center;
+}
+
+.neptune-tilbage-button {
   grid-area: 1/1/2/2;
   justify-self: top;
 }
