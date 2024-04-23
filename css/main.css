@@ -13,10 +13,14 @@
   }
  html{
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+
+
  }
  section{
-  scroll-snap-type: x mandatory;
+  scroll-snap-align: start; /* Snap each section to the start of the viewport */
  }
+
   body{
     overflow-x: hidden;
     
