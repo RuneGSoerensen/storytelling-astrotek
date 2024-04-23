@@ -676,3 +676,40 @@ align-self: end;
   grid-area: 1/1/2/2;
   justify-self: top;
 }
+
+
+
+
+
+/* slutside */
+
+.slutside-h1 {
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+
+.slutside-button-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.slutside-button{
+  font-size: 1rem;
+  height: 2rem;
+  width: 14rem;
+  border-radius: 20px;
+  border: 0px;
+  margin: 3rem;
+  margin-top: 6rem;
+  background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
+  transition: ease-out 200ms;
+}
+.slutside-button:hover{
+  transform: scale(1.2);
+  transition: ease-in-out 200ms;
+  
+  
+}
+
