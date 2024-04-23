@@ -16,9 +16,5 @@ export default defineConfig(({ command }) => {
     }
   };
 
-  if (command !== "serve") {
-    config.base = "/storytelling-astrotek/";
-  }
-
   return config;
 });
