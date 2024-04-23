@@ -18,22 +18,29 @@ iconImages.forEach((image, index) => {
     image.addEventListener('mouseout', () => handleMouseOut(index));
 });
 
-
 // Function to fetch JSON data from a file
-function fetchContent() {
-    fetch('../json/planeter.json') 
+function fetchPlanetData() {
+    fetch('../json/planeter.json')
         .then(response => response.json())
         .then(data => {
-            // Populate paragraphs with the retrieved data
-            document.querySelector('.information-icons .temperature').textContent = data.temperature;
-            document.querySelector('.information-icons .kredsloebb').textContent = data.kredsloebb;
-            document.querySelector('.information-icons .timeOnPlanet').textContent = data.timeOnPlanet;
+            // Iterate over each planet's data
+            Object.keys(data).forEach(planetName => {
+                const planetData = data[planetName];
+                
+                // Populate paragraphs with the fetched data
+                const planetSection = document.getElementById(planetName);
+                if (planetSection) {
+                    const paragraphs = planetSection.querySelectorAll('.information-icons p');
+                    paragraphs.forEach(paragraph => {
+                        const dataType = paragraph.classList[0]; // Get the data type (e.g., kredsloeb, timeOnPlanet, temperature)
+                        paragraph.textContent = planetData[dataType]; // Populate paragraph with the corresponding data
+                    });
+                }
+            });
         })
-        .catch(error => console.error('Error fetching JSON:', error));
+        .catch(error => console.error('Error fetching planet data:', error));
 }
 
-// Call the fetchContent function to fetch and populate the content
-fetchContent();
-
-
+// Call the fetchPlanetData function to fetch and populate the content
+fetchPlanetData();
 
