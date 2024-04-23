@@ -11,7 +11,9 @@
     padding: 0;
     font-family: le-havre-rounded, sans-serif;    
   }
- 
+ html{
+  scroll-behavior: smooth;
+ }
   body{
     overflow-x: hidden;
     
@@ -20,9 +22,7 @@
     overflow-y: hidden;
   }
 .slides{
-  background-image: url(../media/background/background_1B.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
+
   height: 100vh;
   width: 100vw;
 }
@@ -30,6 +30,12 @@
   width: 15%;
   margin-left: 2rem;
   margin-top: 0.5rem;
+}
+.forside{
+  background-image: url(/media/background/background_1b.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
   h1{
@@ -215,7 +221,7 @@
 /* STYLING AF SOLEN SIDE */
 
 .underside-solen{
-  background-image: url(/media/background/background_1B.webp);
+  background-image: url(/media/background/background_2c.webp);
   background-repeat: no-repeat;
   background-size: contain;
   height: 100vh;
@@ -261,16 +267,23 @@ width: auto;
 
 
 
-#forsiden {
+#solen {
   display: flex;
   height: 100vh; 
   width: 200vw;
 
 }
-
+#forsideSektion{
+  background-image: url(/media/background/background_2b.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .forside-sektion {
   flex: 1;
+  background-image: url(/media/background/background_2b.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .underside-solen {
@@ -286,6 +299,9 @@ width: auto;
   display: flex;
   height: 100vh; 
   width: 200vw;
+  background-image: url(/media/background/background_3b.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .merkurUnderside{
   flex: 1;
@@ -295,7 +311,7 @@ width: auto;
 }
 
 .merkurUnderside{
-  background-image: url(/media/background/background_1B.webp);
+  background-image: url(/media/background/background_3c.webp);
   background-repeat: no-repeat;
   background-size: contain;
   height: 100vh;
@@ -396,14 +412,18 @@ a{
 
 .undersideVenus {
   flex: 1;
+ 
 }
 
 #venus {
   flex: 1;
+  background-image: url(/media/background/background_4b.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .undersideVenus {
-  background-image: url(/media/background/background_1B.webp);
+  background-image: url(/media/background/background_4c.webp);
   display: grid;
   grid-template-rows: 1fr 1fr;
   width: 100vw;
@@ -443,10 +463,15 @@ a{
 
 #jorden {
   flex: 1;
+  background-image: url(/media/background/background_5b.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .undersideJorden {
-  background-image: url(/media/background/background_1B.webp);
+  background-image: url(/media/background/background_5c.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
@@ -486,9 +511,14 @@ a{
 }
 #mars{
   flex: 1;
+  background-image: url(/media/background/background_6b.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .undersideMars{
-  background-image: url(/media/background/background_1B.webp);
+  background-image: url(/media/background/background_6c.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
  grid-template-columns: 1fr 1fr;
  height: 100vh;
@@ -531,10 +561,15 @@ align-self: end;
 
 #jupiter {
   flex: 1;
+  background-image: url(/media/background/background_7b.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .undersideJupiter {
-  background-image: url(/media/background/background_1B.webp);
+  background-image: url(/media/background/background_7c.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
@@ -575,10 +610,15 @@ margin-bottom: 4rem;
 
 #saturn {
   flex: 1;
+  background-image: url(/media/background/background_8b.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .undersideSaturn {
-  background-image: url(/media/background/background_1B.webp);
+  background-image: url(/media/background/background_8c.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
@@ -622,10 +662,15 @@ margin-bottom: 4rem;
 
 #uranus {
   flex: 1;
+  background-image: url(/media/background/background_9b.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .undersideUranus {
-  background-image: url(/media/background/background_1B.webp);
+  background-image: url(/media/background/background_9c.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
@@ -671,12 +716,17 @@ margin-bottom: 4rem;
   flex: 1;
 }
 
-#neptune {
+#neptun {
   flex: 1;
+  background-image: url(/media/background/background_10b.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .undersideNeptune {
-  background-image: url(/media/background/background_1B.webp);
+  background-image: url(/media/background/background_10b.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
@@ -752,9 +802,12 @@ margin-bottom: 4rem;
 
 main{
   width: 100vh;
+  background-image: url(/media/background/background_11b.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .slutside-section{
-  background-image: url(/media/slutside-billede.webp);
+
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
