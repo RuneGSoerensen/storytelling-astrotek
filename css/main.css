@@ -792,7 +792,7 @@ margin-bottom: 4rem;
 .slutside-button{
   font-size: 1rem;
   height: 2rem;
-  width: 14rem;
+  width: 12rem;
   border-radius: 20px;
   border: 0px;
   margin: 3rem;
@@ -800,6 +800,8 @@ margin-bottom: 4rem;
   background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
   transition: ease-out 200ms;
   margin-bottom: 24rem;
+  text-align: center;
+  padding-top: 5px;
   z-index: 2;
 }
 .slutside-button:hover{
