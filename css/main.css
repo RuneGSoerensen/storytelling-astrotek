@@ -1,217 +1,194 @@
 @import url("https://p.typekit.net/p.css?s=1&k=zdb4kbu&ht=tk&f=682.692.693.698.699&a=166822266&app=typekit&e=css");
 
 :root {
---white: #ffffff;
-
+  --white: #ffffff;
 }
 
-*{
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-    font-family: le-havre-rounded, sans-serif;    
-  }
- html{
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: le-havre-rounded, sans-serif;
+}
+html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-
-
- }
- section{
+}
+section {
   scroll-snap-align: start; /* Snap each section to the start of the viewport */
- }
+}
 
-  body{
-    overflow-x: hidden;
-    
-  }
-  .bodystuck{
-    overflow-y: hidden;
-  }
-.slides{
-
+body {
+  overflow-x: hidden;
+}
+.bodystuck {
+  overflow-y: hidden;
+}
+.slides {
   height: 100vh;
   width: 100vw;
 }
-.logo{
+.logo {
   width: 15%;
   margin-left: 2rem;
   margin-top: 0.5rem;
 }
-.forside{
-  background-image: url(/media/background/background_1b.webp);
+.forside {
+  background-image: url(./media/background/background_1b.webp);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
-  h1{
-    
-    font-size: 5rem;
-    margin-bottom: 2rem;
-   color: var(--white);
-   text-align: center;
-  }
-  h2{
-    color: var(--white);
-    text-align: center;
-  }
-  h3{
-    color: var(--white);
-    text-align: center;
-  }
-  p{
-    color: var(--white);
-  }
-  .button-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  .forside-button{
-    font-size: 1rem;
-    height: 2rem;
-    width: 12rem;
-    border-radius: 20px;
-    border: 0px;
-    margin: 3rem;
-    margin-top: 6rem;
-    background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
-    transition: ease-out 200ms;
-    text-align: center;
-    padding-top: 5px;
-  }
-  .forside-button:hover{
-    transform: scale(1.2);
-    transition: ease-in-out 200ms;
-    
-    
-  }
-  /* start style af solen */
- .planetContainer{
- grid-area: 1/3/2/4;
- transform: translate(-12vw, 0);
- margin-top: 5vh;
- }
-
-  .info-cirkel{
-    width: 30vh;
-    height: auto;
-    transform: translate(2vw, 0.5vh);
-    z-index: 2;
-   
-
-  }
-  .info-grapic{
-    grid-area: 1/2/2/3;
-  }
-  .iconer{
-    height: auto;
-    width:13%;
-    
-    display: flex;
-   
-   
-  }
-  .iconer-figure{
-    grid-area: 1/2/2/3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transform: translate(8vw, -0.2vh);
-  }
-  .tid{
-    transform: translate(-5.8vw, 0.2vh);
-    z-index: 1;
-    width: 14%;
-  }
-  .omloebstid{
-    transform: translate(0, 0.9vh);
-  }
-  .temperatur{
-    transform: translate(0, -0.3vh);
-  }
-  .information-icons {
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .information-icons p {
-    font-size: 1.35rem;
-    padding: 20px;
-    visibility: hidden;
-  }
-  .information-icons p.visible {
-    visibility: visible;
+h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  color: var(--white);
+  text-align: center;
 }
-  
-  .flex-div{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
+h2 {
+  color: var(--white);
+  text-align: center;
+}
+h3 {
+  color: var(--white);
+  text-align: center;
+}
+p {
+  color: var(--white);
+}
+.button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.forside-button {
+  font-size: 1rem;
+  height: 2rem;
+  width: 12rem;
+  border-radius: 20px;
+  border: 0px;
+  margin: 3rem;
+  margin-top: 6rem;
+  background: linear-gradient(to bottom, #bcc6cc, #eee, #bcc6cc);
+  transition: ease-out 200ms;
+  text-align: center;
+  padding-top: 5px;
+}
+.forside-button:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 200ms;
+}
+/* start style af solen */
+.planetContainer {
+  grid-area: 1/3/2/4;
+  transform: translate(-12vw, 0);
+  margin-top: 5vh;
+}
 
-  }
-  .underside-button-div{
-   grid-area: 1/3/2/4;
-   display: flex;
-   justify-content: center;
-   align-items: end;
-   flex-direction: column;
-    
-   
-  }
-  .underside-button{
-    height: 2rem;
-    width: 10rem;
-    border-radius: 20px;
-    border: 0px;
-    background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
-    transition: ease-out 200ms;
-    font-size: 1rem;
-    margin: 1rem;
-    
-  }
+.info-cirkel {
+  width: 30vh;
+  height: auto;
+  transform: translate(2vw, 0.5vh);
+  z-index: 2;
+}
+.info-grapic {
+  grid-area: 1/2/2/3;
+}
+.iconer {
+  height: auto;
+  width: 13%;
 
-  .underside-button:hover{
-    transform: scale(1.2);
-    transition: ease-in-out 200ms;
-    
-  }
-  .navigation-side {
-    grid-area: 1/4/2/5;
-    justify-self: end;
-    align-self: center;
-    margin-right: 2vw;
+  display: flex;
+}
+.iconer-figure {
+  grid-area: 1/2/2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translate(8vw, -0.2vh);
+}
+.tid {
+  transform: translate(-5.8vw, 0.2vh);
+  z-index: 1;
+  width: 14%;
+}
+.omloebstid {
+  transform: translate(0, 0.9vh);
+}
+.temperatur {
+  transform: translate(0, -0.3vh);
+}
+.information-icons {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.information-icons p {
+  font-size: 1.35rem;
+  padding: 20px;
+  visibility: hidden;
+}
+.information-icons p.visible {
+  visibility: visible;
+}
+
+.flex-div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+.underside-button-div {
+  grid-area: 1/3/2/4;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+}
+.underside-button {
+  height: 2rem;
+  width: 10rem;
+  border-radius: 20px;
+  border: 0px;
+  background: linear-gradient(to bottom, #bcc6cc, #eee, #bcc6cc);
+  transition: ease-out 200ms;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.underside-button:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 200ms;
+}
+.navigation-side {
+  grid-area: 1/4/2/5;
+  justify-self: end;
+  align-self: center;
+  margin-right: 2vw;
 }
 
 .navigation-side li {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .navigation-side a {
-    color: var(--white);
-    text-decoration: none;
-    
+  color: var(--white);
+  text-decoration: none;
 }
 .navigation-side li {
   list-style-type: disc; /* Add disc bullets */
-  color:var(--white);
-  
+  color: var(--white);
 }
-.navigation-side li::marker{
+.navigation-side li::marker {
   font-size: 2rem;
-  
-  
 }
-.scrolldown-box{
+.scrolldown-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 4rem;
 }
-.scrolldown-outer{
+.scrolldown-outer {
   width: 2rem;
   height: 3rem;
   border: 2px solid gray;
@@ -219,8 +196,7 @@
   display: flex;
   justify-content: center;
 }
-.scrolldown-inner{
-  
+.scrolldown-inner {
   border-radius: 20px;
   height: 1rem;
   width: 1rem;
@@ -228,14 +204,13 @@
   margin-top: 5px;
   transform: translate();
 }
-.scrolldown-box p{
+.scrolldown-box p {
   color: gray;
 }
 
-
 /* STYLING AF SOLEN SIDE */
 
-.underside-solen{
+.underside-solen {
   background-image: url(/media/background/background_2c.webp);
   background-repeat: no-repeat;
   background-size: contain;
@@ -246,49 +221,42 @@
   transform: translate(0%);
 }
 
-.tilbage-button{
-width: 5rem;
-height: 3rem;
-border: 0;
-margin-top: 2rem;
-background-color: transparent;
-color: gray;
-font-size: 1rem;
-transform: translate(0, 1rem);
+.tilbage-button {
+  width: 5rem;
+  height: 3rem;
+  border: 0;
+  margin-top: 2rem;
+  background-color: transparent;
+  color: gray;
+  font-size: 1rem;
+  transform: translate(0, 1rem);
 }
-.tilbage-arrow{
-width: 4rem;
-}
-
-.tilbage-button-container{
-display: flex;
-flex-direction: column;
-margin-left: 2rem;
+.tilbage-arrow {
+  width: 4rem;
 }
 
-.solens-overflade{
-height: 100vh;
-width: auto;
-
+.tilbage-button-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
 }
-.underside-tekst-solen{
+
+.solens-overflade {
+  height: 100vh;
+  width: auto;
+}
+.underside-tekst-solen {
   width: 20vw;
   margin-top: 10rem;
   font-size: 1.2rem;
 }
 
-
-
-
-
-
 #solen {
   display: flex;
-  height: 100vh; 
+  height: 100vh;
   width: 200vw;
-
 }
-#forsideSektion{
+#forsideSektion {
   background-image: url(/media/background/background_2b.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -302,30 +270,26 @@ width: auto;
 }
 
 .underside-solen {
-  flex: 1; 
-
+  flex: 1;
 }
 
-
-
-
 /* STYLING AF MERKUR UNDERSIDE */
-#merkurSide{
+#merkurSide {
   display: flex;
-  height: 100vh; 
+  height: 100vh;
   width: 200vw;
   background-image: url(/media/background/background_3b.webp);
   background-repeat: no-repeat;
   background-size: contain;
 }
-.merkurUnderside{
+.merkurUnderside {
   flex: 1;
 }
-#merkur{
+#merkur {
   flex: 1;
 }
 
-.merkurUnderside{
+.merkurUnderside {
   background-image: url(/media/background/background_3c.webp);
   background-repeat: no-repeat;
   background-size: contain;
@@ -336,7 +300,7 @@ width: auto;
 
 #merkurFunFact {
   text-align: center;
-  transform: translate(36rem,12rem);
+  transform: translate(36rem, 12rem);
   color: white;
   width: 16rem;
   font-size: 1.2rem;
@@ -349,11 +313,11 @@ width: auto;
   color: white;
   z-index: 1;
   font-size: 1.2rem;
-} 
+}
 
 .merkur-2d {
   width: 32%;
-  transform: translate(27rem,-26rem);
+  transform: translate(27rem, -26rem);
   z-index: 1;
 }
 
@@ -368,50 +332,36 @@ width: auto;
   width: 30%;
   transform: translate(10rem, -12rem);
   z-index: 0;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* style af 404 side */
 
-.message404{
-font-size: 2rem;
-text-align: center;
+.message404 {
+  font-size: 2rem;
+  text-align: center;
 }
-.button404{
-height: 4rem;
-width: 10rem;
-border-radius: 40px;
-background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
-transform: translate(30vh,20vh);
-text-decoration: none;
-color: black;
-text-align: center;
-border: 0;
-padding-top: 15px;
+.button404 {
+  height: 4rem;
+  width: 10rem;
+  border-radius: 40px;
+  background: linear-gradient(to bottom, #bcc6cc, #eee, #bcc6cc);
+  transform: translate(30vh, 20vh);
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  border: 0;
+  padding-top: 15px;
 }
-a{
+a {
   text-decoration: none;
   color: black;
 }
-.pluto-404{
-  height:auto;
+.pluto-404 {
+  height: auto;
   width: 300px;
 }
 
-.section404{
+.section404 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -430,7 +380,6 @@ a{
 
 .undersideVenus {
   flex: 1;
- 
 }
 
 #venus {
@@ -509,7 +458,6 @@ a{
   justify-self: center;
   align-self: center;
   width: 18rem;
-
 }
 
 .jorden-tilbage-button {
@@ -519,49 +467,47 @@ a{
 
 /* style af undersiden mars */
 
-#marsSide{
+#marsSide {
   display: flex;
-  height: 100vh; 
+  height: 100vh;
   width: 200vw;
 }
-.undersideMars{
+.undersideMars {
   flex: 1;
 }
-#mars{
+#mars {
   flex: 1;
   background-image: url(/media/background/background_6b.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.undersideMars{
+.undersideMars {
   background-image: url(/media/background/background_6c.webp);
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
- grid-template-columns: 1fr 1fr;
- height: 100vh;
- width: 100vw;
- transform: translate(0);
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(0);
 }
-.mars-rover{
-height: 15vh;
-grid-area: 1/2/2/3;
-justify-self: center;
-margin-top: 17vh;
-
+.mars-rover {
+  height: 15vh;
+  grid-area: 1/2/2/3;
+  justify-self: center;
+  margin-top: 17vh;
 }
-.mars-planet-underside{
-height: 70vh;
-grid-area: 1/2/2/3;
-align-self: end;
-
+.mars-planet-underside {
+  height: 70vh;
+  grid-area: 1/2/2/3;
+  align-self: end;
 }
-.mars-underside-tekst{
+.mars-underside-tekst {
   grid-area: 1/1/2/2;
   justify-self: center;
   align-self: center;
 }
-.mars-tilbage-button{
+.mars-tilbage-button {
   grid-area: 1/1/2/2;
   justify-self: top;
 }
@@ -610,7 +556,7 @@ align-self: end;
 
 .jupiter-tilbage-button {
   grid-area: 1/1/2/2;
-margin-bottom: 4rem;
+  margin-bottom: 4rem;
   align-self: end;
 }
 
@@ -646,9 +592,8 @@ margin-bottom: 4rem;
 
 .saturn-ring {
   height: 100vh;
- grid-area: 1/1/2/2;
- transform: translate(-10vw);
-  
+  grid-area: 1/1/2/2;
+  transform: translate(-10vw);
 }
 
 .saturn-underside-tekst {
@@ -658,7 +603,6 @@ margin-bottom: 4rem;
   width: 20rem;
   margin-right: 30vw;
   margin-bottom: 30vh;
-
 }
 
 .saturn-tilbage-button {
@@ -702,9 +646,8 @@ margin-bottom: 4rem;
   align-self: end;
   z-index: 2;
   transform: translate(0, 10vh);
-  
 }
-.uranus-ring{
+.uranus-ring {
   width: 80vw;
   position: absolute;
   transform: translate(20vw, 70vh);
@@ -772,10 +715,6 @@ margin-bottom: 4rem;
   justify-self: top;
 }
 
-
-
-
-
 /* slutside */
 
 .slutside-h1 {
@@ -783,13 +722,13 @@ margin-bottom: 4rem;
   padding-top: 2rem;
 }
 
-.slutside-button-div{
+.slutside-button-div {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.slutside-button{
+.slutside-button {
   align-items: center;
   justify-content: center;
   font-size: 1rem;
@@ -799,32 +738,30 @@ margin-bottom: 4rem;
   border: 0px;
   margin: 3rem;
   margin-top: 6rem;
-  background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
+  background: linear-gradient(to bottom, #bcc6cc, #eee, #bcc6cc);
   transition: ease-out 200ms;
   text-align: center;
   padding-top: 5px;
-  
 }
 
-.slutside-button:hover{
+.slutside-button:hover {
   transform: scale(1.2);
   transition: ease-in-out 200ms;
 }
 
-.slutside-section{
+.slutside-section {
   background-image: url(/media/background/background_11b.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
-main{
+main {
   width: 100vh;
   background-image: url(/media/background/background_11b.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 .slutside-billede {
   width: 100%;
