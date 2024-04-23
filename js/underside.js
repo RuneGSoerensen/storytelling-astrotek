@@ -52,7 +52,7 @@ function createElements() {
         solensOverfladeImage.classList.add("solens-overflade");
         undersideSection.appendChild(solensOverfladeImage);
     
-        const forsiden = document.getElementById("forsiden");
+        const forsiden = document.getElementById("solen");
         forsiden.appendChild(undersideSection);
     
         
@@ -416,7 +416,7 @@ function reverseUranusAnimations(undersideUranusSection) {
 
 
 // Neptune
-const neptuneSection = document.getElementById("neptune");
+const neptuneSection = document.getElementById("neptun");
 const neptuneButton = document.getElementById("neptuneButton");
 const undersideNeptuneSection = document.getElementsByClassName("undersideNeptune")[0];
 const neptuneBackButton = document.getElementById("neptuneBackButton");

@@ -4,16 +4,16 @@
 <head>
     <!-- META -->
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="title" content="Steno-Museum Interaktivt Astrotek">
-        <meta name="description" content="Mangler tekst">
-        <meta name="keywords" content="mangler tekst">
-        <meta name="robots" content="index, follow">
-        <meta name="language" content="Danish">
-        <meta name="geo.region" content="DK" >
-        <meta name="geo.placename" content="Aarhus" >
-        <meta name="geo.position" content="56.169837;10.216097" >
-        <meta name="ICBM" content="56.169837, 10.216097" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Steno-Museum Interaktivt Astrotek">
+    <meta name="description" content="Oplev en interaktiv og engagerende digital løsning til Steno Museets 'Astroteket' udstilling i Aarhus. Udforsk fascinerende videnskabelige opdagelser, interaktivt indhold og unikke oplevelser, der vækker og tilfredsstiller din nysgerrighed for solsystemet og universet. Dyk ned i stjernehimlen, udforsk galakser og nyd en virtuel rejse gennem planetariumet og observatoriet. Lad dig inspirere til at besøge os personligt og opleve videnskabens verden på nært hold.">
+    <meta name="keywords" content="museum astronomi, planeter i solsystemet, planeter navne, planeter størrelse, solsystemet størrelsesforhold, stjernehimlen, galakser, planetarium, observatoriet">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Danish">
+    <meta name="geo.region" content="DK" >
+    <meta name="geo.placename" content="Aarhus" >
+    <meta name="geo.position" content="56.169837;10.216097" >
+    <meta name="ICBM" content="56.169837, 10.216097" >
 
         <!-- TITLE -->
         <title>Steno-Museum Interaktivt Astrotek</title>
@@ -48,13 +48,13 @@
             <br><br>
             <h3>Udforsk solsystemets skønhed og universets uendelighed</h3>
             <div class="button-div">
-                <button class="forside-button forside-button-sol">Udforsk Solsystemet</button>
-                <button class="forside-button forside-button-uni">Udforsk Universet</button>
+                <a href="#solen"><button class="forside-button forside-button-sol">Udforsk Solsystemet</button></a>
+                <a href="/pages/404.html"><button class="forside-button forside-button-uni">Udforsk Universet</button></a>
             </div>
         </section>
      
         <!-- SEKTION FOR SOLEN -->
-        <main id="forsiden">
+        <main id="solen">
         <section class="slides" id="forsideSektion">
             <h1>Solen</h1>
             <div class="flex-div">
@@ -74,14 +74,16 @@
                     </div>
                 </figure>
                 <div class="information-icons">
-                        <p>
-                            Det her er top-infoLorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
+                        <p class="kredsloeb">
+                            Solen er omdrejningspunktet i vores solsystem
                         </p>
-                        <p class="mid-info information-text">
-                            Det her er mid infoLorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
+                        
+                        <p class="timeOnPlanet">
+                            Solen skinner altid på - Solen.
                         </p>
-                        <p class="bottom-info information-text">
-                            Det her er bottom infoLorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
+                        
+                        <p class="temperature">
+                            Overfladetemperaturen på Solen er 5.504 °C, mens Solens indre er 15 millioner grader varm. 
                         </p>
                 </div>
                 <div class="underside-button-div">
@@ -122,19 +124,27 @@
                     <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
                 </figure>
                 <figure class="iconer-figure">
-                    <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    </div>
                 </figure>
-                <div class="information-wheel">
-                        <p class="top-info information-text">
-                            Det her er top-infoLorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
+                <div class="information-icons">
+                        <p class="kredsloeb">
+                            Èt år på Merkur svarer til cirka 88 dage på Jorden.
                         </p>
-                        <p class="mid-info information-text">
-                            Det her er mid infoLorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
+                        
+                        <p class="timeOnPlanet">
+                            Èn dag på Merkur svarer til cirka 59 dage på Jorden.
                         </p>
-                        <p class="bottom-info information-text">
-                            Det her er bottom infoLorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
+                        
+                        <p class="temperature">
+                            Merkur har en gennemsnitstemperatur på 167 °C
                         </p>
                 </div>
                 <div class="underside-button-div">
@@ -187,20 +197,28 @@
                     <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
                 </figure>
                 <figure class="iconer-figure">
-                    <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    </div>
                 </figure>
-                <div class="information-wheel">
-                    <p class="top-info information-text">
-                        Det her er top-infoLorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
-                    </p>
-                    <p class="mid-info information-text">
-                        Det her er mid infoLorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
-                    </p>
-                    <p class="bottom-info information-text">
-                        Det her er bottom infoLorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
-                    </p>
+                <div class="information-icons">
+                        <p class="kredsloeb">
+                            Èt år på Venus svarer til cirka 224 dage på Jorden.
+                        </p>
+                        
+                        <p class="timeOnPlanet">
+                            Èn dag på Venus svarer til cirka 243 dage på Jorden.
+                        </p>
+                        
+                        <p class="temperature">
+                            Venus har en gennemsnitstemperatur på cirka 480 °C
+                        </p>
                 </div>
                 <div class="underside-button-div">
                     <button class="underside-button button-histore" id="venusButton">Udforsk viden</button>
@@ -235,7 +253,7 @@
             </div>
     
             <p class="venus-underside-tekst" id="venusP"> </p>
-            <img src="media/venus-image.png" alt="Venus planet" class="venus-planet">
+            <img src="media/planeter-2d/2d-venus.webp" alt="Venus planet" class="venus-planet">
           
         </section>
     </main>
@@ -248,20 +266,28 @@
                     <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
                 </figure>
                 <figure class="iconer-figure">
-                    <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    </div>
                 </figure>
-                <div class="information-wheel">
-                    <p class="top-info information-text">
-                        Det her er top-info Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
-                    </p>
-                    <p class="mid-info information-text">
-                        Det her er mid info Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
-                    </p>
-                    <p class="bottom-info information-text">
-                        Det her er bottom info Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
-                    </p>
+                <div class="information-icons">
+                        <p class="kredsloeb">
+                            Èt år på Jorden er 365,24 dage.
+                        </p>
+                        
+                        <p class="timeOnPlanet">
+                            Èn dag på Jorden er 24 timer.
+                        </p>
+                        
+                        <p class="temperature">
+                            Temperaturintervallet på Jorden ligger mellem -88 og 58 °C
+                        </p>
                 </div>
                 <div class="underside-button-div">
                     <button class="underside-button button-histore" id="jordenButton">Udforsk viden</button>
@@ -293,6 +319,7 @@
                 <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow">
             </div>
             <p class="jorden-underside-tekst" id="jordenP"> </p>
+            <img src="media/planeter-2d/2d-earth.webp" alt="jorden planet" class="jorden-2d">
 
         </section>
     </main>
@@ -306,19 +333,27 @@
                     <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
                 </figure>
                 <figure class="iconer-figure">
-                    <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    </div>
                 </figure>
-                <div class="information-wheel">
-                        <p class="top-info information-text">
-                            Det her er top-infoLorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
+                <div class="information-icons">
+                        <p class="kredsloeb">
+                            
                         </p>
-                        <p class="mid-info information-text">
-                            Det her er mid infoLorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
+                        
+                        <p class="timeOnPlanet">
+                        
                         </p>
-                        <p class="bottom-info information-text">
-                            Det her er bottom infoLorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
+                        
+                        <p class="temperature">
+                        
                         </p>
                 </div>
                 <div class="underside-button-div">
@@ -373,20 +408,28 @@
                     <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
                 </figure>
                 <figure class="iconer-figure">
-                    <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    </div>
                 </figure>
-                <div class="information-wheel">
-                    <p class="top-info information-text">
-                        Det her er top-info Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
-                    </p>
-                    <p class="mid-info information-text">
-                        Det her er mid info Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
-                    </p>
-                    <p class="bottom-info information-text">
-                        Det her er bottom info Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Suscipit recusandae praesentium maiores fugit magnam reprehenderit<br>officia sapiente omnis iusto aliquam?
-                    </p>
+                <div class="information-icons">
+                        <p class="kredsloeb">
+                            
+                        </p>
+                        
+                        <p class="timeOnPlanet">
+                        
+                        </p>
+                        
+                        <p class="temperature">
+                        
+                        </p>
                 </div>
                 <div class="underside-button-div">
                     <button class="underside-button button-histore" id="jupiterButton">Udforsk viden</button>
@@ -418,7 +461,7 @@
                 <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow">
             </div>
             <p class="jupiter-underside-tekst" id="jupiterP"> </p>
-            <img src="media/jupiter-planet-image.png" alt="Jupiter planet" class="jupiter-planet">
+            <img src="media/planeter-2d/2d-jupiter.webp" alt="Jupiter planet" class="jupiter-planet">
         </section>
     </main>
     <main id="saturnSide">
@@ -430,20 +473,28 @@
                     <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
                 </figure>
                 <figure class="iconer-figure">
-                    <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    </div>
                 </figure>
-                <div class="information-wheel">
-                    <p class="top-info information-text">
-                        Top-info about Saturn
-                    </p>
-                    <p class="mid-info information-text">
-                        Mid-info about Saturn
-                    </p>
-                    <p class="bottom-info information-text">
-                        Bottom-info about Saturn
-                    </p>
+                <div class="information-icons">
+                        <p class="kredsloeb">
+                            
+                        </p>
+                        
+                        <p class="timeOnPlanet">
+                        
+                        </p>
+                        
+                        <p class="temperature">
+                        
+                        </p>
                 </div>
                 <div class="underside-button-div">
                     <button class="underside-button button-histore" id="saturnButton">Udforsk viden</button>
@@ -477,7 +528,7 @@
             </div>
     
             <p class="saturn-underside-tekst" id="saturnP"> </p>
-            <img src="media/saturn-image.jpg" alt="Saturn planet" class="saturn-planet">
+            <img src="media/saturen-ring-01.webp" alt="Saturn ring" class="saturn-ring">
         </section>
     </main>
     <main id="uranusSide">
@@ -489,20 +540,28 @@
                     <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
                 </figure>
                 <figure class="iconer-figure">
-                    <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    </div>
                 </figure>
-                <div class="information-wheel">
-                    <p class="top-info information-text">
-                        Top-info about Uranus
-                    </p>
-                    <p class="mid-info information-text">
-                        Mid-info about Uranus
-                    </p>
-                    <p class="bottom-info information-text">
-                        Bottom-info about Uranus
-                    </p>
+                <div class="information-icons">
+                        <p class="kredsloeb">
+                            
+                        </p>
+                        
+                        <p class="timeOnPlanet">
+                        
+                        </p>
+                        
+                        <p class="temperature">
+                        
+                        </p>
                 </div>
                 <div class="underside-button-div">
                     <button class="underside-button button-histore" id="uranusButton">Udforsk viden</button>
@@ -535,33 +594,42 @@
                 <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow">
             </div>
             <p class="uranus-underside-tekst" id="uranusP"></p>
-            <img src="media/uranus-image.jpg" alt="Uranus planet" class="uranus-planet">
+            <img src="media/uranus_kopi_1.png" alt="Uranus planet" class="uranus-planet">
+            <img src="media/aktiv-1-1.png" alt="uranus ring" class="uranus-ring">
         </section>
     </main>
     
     <main id="neptuneSide">
-        <section class="slides" id="neptune">
-            <h1>Neptune</h1>
+        <section class="slides" id="neptun">
+            <h1>Neptun</h1>
             <div class="flex-div">
                 <div id="neptuneContainer" class="planetContainer"></div>
                 <figure class="info-grapic">
                     <img src="media/test-outerinfograpic-3points.png" alt="" class="info-cirkel">
                 </figure>
                 <figure class="iconer-figure">
-                    <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
-                    <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
-                    <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-orbit.webp" alt="" class="iconer omloebstid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-tid.webp" alt="" class="iconer tid">
+                    </div>
+                    <div class="icon-container">
+                        <img src="media/ikoner/ikon-temperatur.webp" alt="" class="iconer temperatur">
+                    </div>
                 </figure>
-                <div class="information-wheel">
-                    <p class="top-info information-text">
-                        Top-info about Neptune
-                    </p>
-                    <p class="mid-info information-text">
-                        Mid-info about Neptune
-                    </p>
-                    <p class="bottom-info information-text">
-                        Bottom-info about Neptune
-                    </p>
+                <div class="information-icons">
+                        <p class="kredsloeb">
+                            
+                        </p>
+                        
+                        <p class="timeOnPlanet">
+                        
+                        </p>
+                        
+                        <p class="temperature">
+                        
+                        </p>
                 </div>
                 <div class="underside-button-div">
                     <button class="underside-button button-histore" id="neptuneButton">Udforsk viden</button>
@@ -594,7 +662,7 @@
                 <img src="media/ikoner/arrow.png" alt="" class="tilbage-arrow">
             </div>
             <p class="neptune-underside-tekst" id="neptuneP"></p>
-            <img src="media/neptune-image.jpg" alt="Neptune planet" class="neptune-planet">
+            <img src="media/planeter-2d/2d-neptun.webp" alt="Neptune planet" class="neptune-planet">
         </section>
     </main>
 
@@ -604,7 +672,7 @@
     <!-- SLUTSIDE -->
 
     <main class="slides">
-        <section class="slutside-section" id="neptune">
+        <section class="slutside-section">
             <h1 class="slutside-h1">Du befinder dig på <br> kanten af Solsystemet</h1>
             <h2 class="slutside-h2">Hvor vil du hen nu?</h2>
               
