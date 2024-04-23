@@ -390,7 +390,6 @@ text-align: center;
 .button404{
 height: 4rem;
 width: 10rem;
-
 border-radius: 40px;
 background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
 transform: translate(30vh,20vh);
@@ -398,6 +397,7 @@ text-decoration: none;
 color: black;
 text-align: center;
 border: 0;
+padding-top: 15px;
 }
 a{
   text-decoration: none;
@@ -412,7 +412,9 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  background-image: url(/media/background/background_1a.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* style af venus */
