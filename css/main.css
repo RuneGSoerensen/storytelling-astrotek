@@ -79,6 +79,8 @@
     margin-top: 6rem;
     background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
     transition: ease-out 200ms;
+    text-align: center;
+    padding-top: 5px;
   }
   .forside-button:hover{
     transform: scale(1.2);
