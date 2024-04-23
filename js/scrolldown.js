@@ -19,3 +19,17 @@ Array.from(scrolldownInners).forEach(scrolldownInner => {
   
     startLoop();
 });
+
+
+// for each loop over geograpic button så du bliver smidt til 404 side
+    
+    let buttons = document.querySelectorAll(".button-geo");
+    
+    
+    buttons.forEach(function(button) {
+      
+      button.addEventListener("click", function() {
+    
+        window.location.href = 'pages/404.html';
+      });
+    });

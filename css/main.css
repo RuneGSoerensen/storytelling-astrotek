@@ -13,7 +13,14 @@
   }
  html{
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+
+
  }
+ section{
+  scroll-snap-align: start; /* Snap each section to the start of the viewport */
+ }
+
   body{
     overflow-x: hidden;
     
@@ -72,6 +79,8 @@
     margin-top: 6rem;
     background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
     transition: ease-out 200ms;
+    text-align: center;
+    padding-top: 5px;
   }
   .forside-button:hover{
     transform: scale(1.2);
@@ -110,12 +119,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transform: translate(6.9vw, 0.3vh);
+    transform: translate(8vw, -0.2vh);
   }
   .tid{
-    transform: translate(-5vw, -0.2vh);
+    transform: translate(-5.8vw, 0.2vh);
     z-index: 1;
     width: 14%;
+  }
+  .omloebstid{
+    transform: translate(0, 0.9vh);
+  }
+  .temperatur{
+    transform: translate(0, -0.3vh);
   }
   .information-icons {
     color: var(--white);
@@ -378,7 +393,6 @@ text-align: center;
 .button404{
 height: 4rem;
 width: 10rem;
-
 border-radius: 40px;
 background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
 transform: translate(30vh,20vh);
@@ -386,6 +400,7 @@ text-decoration: none;
 color: black;
 text-align: center;
 border: 0;
+padding-top: 15px;
 }
 a{
   text-decoration: none;
@@ -400,7 +415,9 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  background-image: url(/media/background/background_1a.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* style af venus */
