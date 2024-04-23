@@ -302,43 +302,44 @@ width: auto;
   transform: translate(0);
 }
 
+#merkurFunFact {
+  text-align: center;
+  transform: translate(36rem,12rem);
+  color: white;
+  width: 16rem;
+  font-size: 1.2rem;
+}
 
 #merkurP {
   text-align: center;
   width: 18rem;
-  margin-left: 4rem;
-  margin-top: 6rem;
+  transform: translate(5rem, 6rem);
   color: white;
   z-index: 1;
+  font-size: 1.2rem;
 } 
-
-#merkurFunFact {
-  text-align: center;
-  width: 18rem;
-  margin-left: 4rem;
-  margin-top: 6rem;
-  color: white;
-}
 
 .merkur-2d {
   width: 32%;
-  margin-left: 30rem;
-  margin-top: -16rem;
+  transform: translate(27rem,-26rem);
+  z-index: 1;
 }
 
 .merkur-maskot {
   z-index: 1;
   width: 15%;
-  margin-left: 70rem;
-  margin-top: -10rem;
+  transform: translate(40rem, -26rem);
   z-index: 1;
 }
 
 .merkur-funfact {
   width: 30%;
-  margin-left: 54rem;
-  margin-top: -8rem;
+  transform: translate(10rem, -12rem);
+  z-index: 0;
+
 }
+
+
 
 
 
