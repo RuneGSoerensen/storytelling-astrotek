@@ -23,7 +23,7 @@ Array.from(scrolldownInners).forEach(scrolldownInner => {
 
 // for each loop over geograpic button så du bliver smidt til 404 side
     
-    let buttons = document.querySelectorAll(".underside-button");
+    let buttons = document.querySelectorAll(".button-geo");
     
     
     buttons.forEach(function(button) {
