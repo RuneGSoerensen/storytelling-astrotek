@@ -59,10 +59,10 @@
   .forside-button{
     font-size: 1rem;
     height: 2rem;
-    width: 11rem;
+    width: 12rem;
     border-radius: 20px;
     border: 0px;
-    margin: 5rem;
+    margin: 3rem;
     margin-top: 6rem;
     background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
     transition: ease-out 200ms;
@@ -211,6 +211,8 @@
 }
 
 
+/* STYLING AF SOLEN SIDE */
+
 .underside-solen{
   background-image: url(/media/background/background_1B.webp);
   background-repeat: no-repeat;
@@ -290,24 +292,6 @@ width: auto;
 #merkur{
   flex: 1;
 }
-.merkur-2d {
-  width: 35%;
-  /* position: absolute;
-  margin-top: 6rem;
-  margin-left: 24rem; */
-}
-
-.merkur-maskot {
-  width: 15%;
-  /* margin-left: 68rem;
-  margin-top: 22rem; */
-}
-
-.merkur-funfact {
-  width: 30%;
-  /* margin-left: 52rem;
-  margin-top: -2rem; */
-}
 
 .merkurUnderside{
   background-image: url(/media/background/background_1B.webp);
@@ -317,6 +301,53 @@ width: auto;
   width: 100vw;
   transform: translate(0);
 }
+
+
+#merkurP {
+  text-align: center;
+  width: 18rem;
+  margin-left: 4rem;
+  margin-top: 6rem;
+  color: white;
+  z-index: 1;
+} 
+
+#merkurFunFact {
+  text-align: center;
+  width: 18rem;
+  margin-left: 4rem;
+  margin-top: 6rem;
+  color: white;
+}
+
+.merkur-2d {
+  width: 32%;
+  margin-left: 30rem;
+  margin-top: -16rem;
+}
+
+.merkur-maskot {
+  z-index: 1;
+  width: 15%;
+  margin-left: 70rem;
+  margin-top: -10rem;
+  z-index: 1;
+}
+
+.merkur-funfact {
+  width: 30%;
+  margin-left: 54rem;
+  margin-top: -8rem;
+}
+
+
+
+
+
+
+
+
+
 
 
 
