@@ -417,6 +417,25 @@ a {
   grid-area: 1/1/2/2;
   justify-self: top;
 }
+.venus-maskot{
+  grid-area: 1/1/2/2;
+  transform: translate(100vw, 30vh);
+  z-index: 2;
+  height: 20vh;
+  width: auto;
+}
+.venus-funfact{
+  grid-area: 1/1/2/2;
+  height: 20vh;
+  width: auto;
+  opacity: 0;
+  transform: translate(68vw, 45vh);
+}
+.venus-funfact-p{
+  grid-area: 1/1/2/2;
+  transform: translate(70vw, 53vh);
+  color: black;
+}
 /* style af undersiden jorden */
 #jordenSide {
   display: flex;
@@ -465,6 +484,27 @@ a {
   justify-self: top;
 }
 
+
+.jorden-maskot{
+  grid-area: 1/1/2/2;
+  transform: translate(100vw, -20vh);
+  z-index: 2;
+  height: 20vh;
+  width: auto;
+}
+.jorden-funfact{
+  grid-area: 1/1/2/2;
+  height: 20vh;
+  width: auto;
+  opacity: 0;
+  transform: translate(75vw, 27vh);
+}
+.jorden-funfact-p{
+  grid-area: 1/1/2/2;
+  transform: translate(77vw, 34vh);
+  color: black;
+}
+
 /* style af undersiden mars */
 
 #marsSide {
@@ -506,11 +546,35 @@ a {
   grid-area: 1/1/2/2;
   justify-self: center;
   align-self: center;
+  width: 20rem;
 }
 .mars-tilbage-button {
   grid-area: 1/1/2/2;
   justify-self: top;
 }
+
+.Mars-maskot{
+  grid-area: 1/1/2/2;
+   transform: translate(5vw, 100vh);
+  z-index: 2;
+  height: 20vh;
+  width: auto;
+}
+.Mars-funfact{
+  grid-area: 1/1/2/2;
+  height: 20vh;
+  width: auto;
+  opacity: 0;
+  transform: translate(10vw, 65vh) rotate(180deg);
+
+
+}
+.Mars-funfact-p{
+  grid-area: 1/1/2/2;
+  transform: translate(11vw, 69vh);
+  color: black;
+}
+
 
 /* style af jupiter */
 #jupiterSide {
@@ -552,6 +616,7 @@ a {
   grid-area: 1/2/2/3;
   justify-self: center;
   align-self: center;
+  width: 20rem;
 }
 
 .jupiter-tilbage-button {
@@ -559,6 +624,27 @@ a {
   margin-bottom: 4rem;
   align-self: end;
 }
+
+.jupiter-maskot{
+  grid-area: 1/1/2/2;
+  transform: translate(30vw, 100vh);
+  z-index: 2;
+  height: 20vh;
+  width: auto;
+}
+.jupiter-funfact{
+  grid-area: 1/1/2/2;
+  height: 20vh;
+  width: auto;
+  opacity: 0;
+  transform: translate(35vw, 65vh) rotate(180deg);
+}
+.jupiter-funfact-p{
+  grid-area: 1/1/2/2;
+  transform: translate(37vw, 70vh);
+  color: black;
+}
+
 
 /* style af saturn */
 
@@ -608,9 +694,29 @@ a {
 .saturn-tilbage-button {
   grid-area: 1/1/2/2;
   justify-self: top;
-  z-index: 2;
+  z-index: 3;
 }
 
+
+.saturn-maskot{
+  grid-area: 1/1/2/2;
+  transform: translate(100vw, -20vh);
+  z-index: 2;
+  height: 20vh;
+  width: auto;
+}
+.saturn-funfact{
+  grid-area: 1/1/2/2;
+  height: 20vh;
+  width: auto;
+  opacity: 0;
+  transform: translate(75vw, 27vh);
+}
+.saturn-funfact-p{
+  grid-area: 1/1/2/2;
+  transform: translate(77vw, 34vh);
+  color: black;
+}
 /* style af uranus */
 #uranusSide {
   display: flex;
@@ -665,6 +771,26 @@ a {
   justify-self: top;
 }
 
+.uranus-maskot{
+  grid-area: 1/1/2/2;
+  transform: translate(40vw, -20vh);
+  z-index: 2;
+  height: 20vh;
+  width: auto;
+}
+.uranus-funfact{
+  grid-area: 1/1/2/2;
+  height: 20vh;
+  width: auto;
+  opacity: 0;
+  transform: translate(28vw, 16vh);
+}
+.uranus-funfact-p{
+  grid-area: 1/1/2/2;
+  transform: translate(30vw, 22vh);
+  color: black;
+}
+
 /* style af neptun */
 
 #neptuneSide {
@@ -714,6 +840,26 @@ a {
   grid-area: 1/1/2/2;
   justify-self: top;
 }
+.neptun-maskot{
+  grid-area: 1/1/2/2;
+  transform: translate(100vw, 50vh);
+  z-index: 2;
+  height: 20vh;
+  width: auto;
+}
+.neptun-funfact{
+  grid-area: 1/1/2/2;
+  height: 20vh;
+  width: auto;
+  opacity: 0;
+  transform: translate(68vw, 65vh);
+}
+.neptun-funfact-p{
+  grid-area: 1/1/2/2;
+  transform: translate(70vw, 73vh);
+  color: black;
+}
+
 
 /* slutside */
 

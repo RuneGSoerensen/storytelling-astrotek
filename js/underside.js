@@ -154,12 +154,26 @@ document.addEventListener("DOMContentLoaded", function () {
         const venusUndersideTekst = document.getElementById("venusP");
         venusUndersideTekst.innerHTML = `${json[2].history}`;
 
+ 
         document.body.classList.add("bodystuck");
 
         venusSection.style.transition = "transform 1s ease-in-out";
         venusSection.style.transform = "translate(-100%)";
         venusUndersideSection.style.transition = "transform 1s ease-in-out";
         venusUndersideSection.style.transform = "translate(-100%)";
+
+
+        setTimeout(() => {
+          const venusUndersideFunFact = document.getElementById("funfact-venus");
+          venusUndersideFunFact.innerHTML = `${json[2].funFact}`;  
+          const venusBubble = document.getElementsByClassName("venus-funfact")[0];
+          const venusMaskot = document.getElementsByClassName("venus-maskot")[0];
+          venusBubble.style.transition = "opacity 1s ease-in-out";
+          venusBubble.style.opacity =1;
+          venusMaskot.style.transition = "transform 1s ease-in-out";
+          venusMaskot.style.transform = "translate(80vw, 30vh)";
+      }, 5000);
+
       })
       .catch(error => console.error("error:", error));
   }
@@ -202,6 +216,20 @@ document.addEventListener("DOMContentLoaded", function () {
         jordenSection.style.transform = "translate(-100%)";
         jordenUndersideSection.style.transition = "transform 1s ease-in-out";
         jordenUndersideSection.style.transform = "translate(-100%)";
+
+
+        setTimeout(() => {
+          const jordenUndersideFunFact = document.getElementById("funfact-jorden");
+          jordenUndersideFunFact.innerHTML = `${json[3].funFact}`; 
+
+          const jordenBubble = document.getElementsByClassName("jorden-funfact")[0];
+          const jordenMaskot = document.getElementsByClassName("jorden-maskot")[0];
+          jordenBubble.style.transition = "opacity 1s ease-in-out";
+          jordenBubble.style.opacity =1;
+          jordenMaskot.style.transition = "transform 1s ease-in-out";
+          jordenMaskot.style.transform = "translate(85vw, 10vh)";
+      }, 5000);
+      
       })
       .catch(error => console.error("error:", error));
   }
@@ -244,6 +272,23 @@ document.addEventListener("DOMContentLoaded", function () {
         marsSection.style.transform = "translate(-100%)";
         marsUndersideSection.style.transition = "transform 1s ease-in-out";
         marsUndersideSection.style.transform = "translate(-100%)";
+
+
+
+        setTimeout(() => {
+          const MarsUndersideFunFact = document.getElementById("funfact-Mars");
+          MarsUndersideFunFact.innerHTML = `${json[4].funFact}`; 
+
+          const MarsBubble = document.getElementsByClassName("Mars-funfact")[0];
+          const MarsMaskot = document.getElementsByClassName("Mars-maskot")[0];
+          MarsBubble.style.transition = "opacity 1s ease-in-out";
+          MarsBubble.style.opacity =1;
+          MarsMaskot.style.transition = "transform 1s ease-in-out";
+          MarsMaskot.style.transform = "translate(5vw, 80vh)";
+ 
+      }, 5000);
+      
+
       })
       .catch(error => console.error("error:", error));
   }
@@ -286,6 +331,19 @@ document.addEventListener("DOMContentLoaded", function () {
         jupiterSection.style.transform = "translate(-100%)";
         jupiterUndersideSection.style.transition = "transform 1s ease-in-out";
         jupiterUndersideSection.style.transform = "translate(-100%)";
+
+
+        setTimeout(() => {
+          const jupiterUndersideFunFact = document.getElementById("funfact-jupiter");
+          jupiterUndersideFunFact.innerHTML = `${json[5].funFact}`; 
+
+          const jupiterBubble = document.getElementsByClassName("jupiter-funfact")[0];
+          const jupiterMaskot = document.getElementsByClassName("jupiter-maskot")[0];
+          jupiterBubble.style.transition = "opacity 1s ease-in-out";
+          jupiterBubble.style.opacity =1;
+          jupiterMaskot.style.transition = "transform 1s ease-in-out";
+          jupiterMaskot.style.transform = "translate(30vw, 80vh)";
+      }, 5000);
       })
       .catch(error => console.error("error:", error));
   }
@@ -328,6 +386,21 @@ document.addEventListener("DOMContentLoaded", function () {
         saturnSection.style.transform = "translate(-100%)";
         saturnUndersideSection.style.transition = "transform 1s ease-in-out";
         saturnUndersideSection.style.transform = "translate(-100%)";
+
+
+        setTimeout(() => {
+          const saturnUndersideFunFact = document.getElementById("funfact-saturn");
+          saturnUndersideFunFact.innerHTML = `${json[6].funFact}`; 
+
+          const saturnBubble = document.getElementsByClassName("saturn-funfact")[0];
+          const saturnMaskot = document.getElementsByClassName("saturn-maskot")[0];
+          saturnBubble.style.transition = "opacity 1s ease-in-out";
+          saturnBubble.style.opacity =1;
+          saturnMaskot.style.transition = "transform 1s ease-in-out";
+          saturnMaskot.style.transform = "translate(85vw, 10vh)";
+      }, 5000);
+      
+
       })
       .catch(error => console.error("error:", error));
   }
@@ -370,6 +443,18 @@ document.addEventListener("DOMContentLoaded", function () {
         uranusSection.style.transform = "translate(-100%)";
         undersideUranusSection.style.transition = "transform 1s ease-in-out";
         undersideUranusSection.style.transform = "translate(-100%)";
+
+        setTimeout(() => {
+          const uranusUndersideFunFact = document.getElementById("funfact-uranus");
+          uranusUndersideFunFact.innerHTML = `${json[7].funFact}`; 
+
+          const uranusBubble = document.getElementsByClassName("uranus-funfact")[0];
+          const uranusMaskot = document.getElementsByClassName("uranus-maskot")[0];
+          uranusBubble.style.transition = "opacity 1s ease-in-out";
+          uranusBubble.style.opacity =1;
+          uranusMaskot.style.transition = "transform 1s ease-in-out";
+          uranusMaskot.style.transform = "translate(40vw, 0vh)";
+      }, 5000);
       })
       .catch(error => console.error("error:", error));
   }
@@ -412,6 +497,17 @@ document.addEventListener("DOMContentLoaded", function () {
         neptuneSection.style.transform = "translate(-100%)";
         undersideNeptuneSection.style.transition = "transform 1s ease-in-out";
         undersideNeptuneSection.style.transform = "translate(-100%)";
+
+        setTimeout(() => {
+          const neptunUndersideFunFact = document.getElementById("funfact-neptun");
+          neptunUndersideFunFact.innerHTML = `${json[8].funFact}`;  
+          const neptunBubble = document.getElementsByClassName("neptun-funfact")[0];
+          const neptunMaskot = document.getElementsByClassName("neptun-maskot")[0];
+          neptunBubble.style.transition = "opacity 1s ease-in-out";
+          neptunBubble.style.opacity =1;
+          neptunMaskot.style.transition = "transform 1s ease-in-out";
+          neptunMaskot.style.transform = "translate(80vw, 50vh)";
+      }, 5000);
       })
       .catch(error => console.error("error:", error));
   }
