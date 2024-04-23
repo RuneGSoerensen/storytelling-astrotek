@@ -2,14 +2,23 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
 
-export default defineConfig({
-  base: "/storytelling-astrotek/",
-  build: {
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, "index.html"),
-        nested: resolve(__dirname, "pages/404.html")
+// https://vitejs.dev/config/
+export default defineConfig(({ command }) => {
+  const config = {
+    base: "/",
+    build: {
+      rollupOptions: {
+        input: {
+          main: resolve(__dirname, "index.html"),
+          nested: resolve(__dirname, "pages/404.html")
+        }
       }
     }
+  };
+
+  if (command !== "serve") {
+    config.base = "/storytelling-astrotek/";
   }
+
+  return config;
 });
