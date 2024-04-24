@@ -279,15 +279,18 @@ p {
   display: flex;
   height: 100vh;
   width: 200vw;
-  background-image: url(../media/background/background_3b.webp);
-  background-repeat: no-repeat;
-  background-size: contain;
+
 }
 .merkurUnderside {
   flex: 1;
 }
 #merkur {
   flex: 1;
+  background-image: url(../media/background/background_3b.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
 }
 
 .merkurUnderside {
