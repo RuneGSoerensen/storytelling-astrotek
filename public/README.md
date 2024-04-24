@@ -9,7 +9,7 @@ Denne README.md-fil giver en trinvis gennemgang af integrationen af JSON-data fo
 Denne README.md fil forklarer integrationen af JSON-data for Venus-sektionen i vores projekt, med fokus på fetching og brug af JSON-objekter.
 
 ## Trin 1: html elementer (for lethedens skyld er dette forkortet)
-her under ser du den generalle opsætning af vores html elementer, vi har en section med class, venusSide
+herunder ser du den generelle opsætning af vores html elementer, vi har en section med class, venusSide
 inde i denne section, har vi en section med Id venus og en anden section som ligger vedsiden af med en class undersidevenus
 ```html 
  <section id="venusSide">
