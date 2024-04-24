@@ -61,7 +61,7 @@ body {
   overflow-y: hidden;
 }
 ```
-## Trin 3: Oprettelse af Elementer og Eventlytter
+## Trin 3: Oprettelse af Elementer og eventListeners
 
 her henter vi referencer til de relevante HTML-elementer og knapper i koden ovenover og laver dem til variabler som vi kan bruge i vores javascript
 ```javascript
@@ -115,6 +115,7 @@ dette kode snippet ligger inde i fetch functionen, her under tager vi fat i de 2
         venusUndersideSection.style.transition = "transform 1s ease-in-out";
         venusUndersideSection.style.transform = "translate(-100%)";
 ```
+
 herefter har vi en funtion som er vores maskot/karakter som vi har sat et setTimeout på for at den først kommer frem 5 sekunder efter knappem er clicked. inde i funktionen har vi taget fat om maskotten, dens tale bubble og bruger json til at tage fat i vores funfact samt ændre vores funfact ptags html
 ```javascript
 
@@ -133,6 +134,7 @@ herefter bruger vi igen transisions til at talebubblen går fra at have en opaci
       }, 5000);
 
 ```
+## Trin: 6: Reverse animation
 her har vi taget fat i vores variable venusBackButton som tager fat i vores button der skal gå tilbage til hoved sektionen, hertil har vi givet den en eventListener og at onlick skal den starte vores reverseVenusAnimation, som vi har lavet under
 ```javascript
   venusBackButton.addEventListener("click", () => {
