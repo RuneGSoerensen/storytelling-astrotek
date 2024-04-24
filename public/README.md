@@ -65,6 +65,8 @@ body {
 
 her henter vi referencer til de relevante HTML-elementer og knapper i koden ovenover og laver dem til variabler som vi kan bruge i vores javascript
 ```javascript
+const url = "json/planeter.json";
+const bodyelem = document.body;
 const venusSection = document.getElementById("venus");
 const venusButton = document.getElementById("venusButton");
 const venusUndersideSection = document.getElementsByClassName("undersideVenus")[0];
