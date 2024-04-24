@@ -342,6 +342,27 @@ p {
   transform: translate(10rem, -12rem);
   z-index: 0;
 }
+      
+        
+.merkur-maskot{
+  grid-area: 1/1/2/2;
+  transform: translate(70vw, -40vh);
+  z-index: 2;
+  height: 20vh;
+  width: auto;
+}
+.merkur-funfact{
+  grid-area: 1/1/2/2;
+  height: 20vh;
+  width: auto;
+  opacity: 0;
+transform: translate(15vw, -25vh);
+}
+.merkur-funfact-p{
+  grid-area: 1/1/2/2;
+transform: translate(61vw, -40vh);
+  color: black;
+}
 
 /* style af 404 side */
 
