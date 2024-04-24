@@ -1,4 +1,4 @@
-@import url("https://p.typekit.net/p.css?s=1&k=zdb4kbu&ht=tk&f=682.692.693.698.699&a=166822266&app=typekit&e=css");
+@import url("https://use.typekit.net/zdb4kbu.css");
 
 :root {
   --white: #ffffff;
@@ -8,7 +8,14 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-  font-family: le-havre-rounded, sans-serif;
+}
+h1 {
+  font-family: "le-havre-rounded", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p, h2, h3 {
+  font-family: sans-serif;
 }
 html {
   scroll-behavior: smooth;
