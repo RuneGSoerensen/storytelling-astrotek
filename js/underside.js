@@ -109,15 +109,23 @@ document.addEventListener("DOMContentLoaded", function () {
         const merkurUndersideTekst = document.getElementById("merkurP");
         merkurUndersideTekst.innerHTML = `${json[1].history}`;
 
-        const merkurUndersideFunFact = document.getElementById("merkurFunFact");
-        merkurUndersideFunFact.innerHTML = `${json[1].funFact}`;
-
         document.body.classList.add("bodystuck");
-
+      
         merkurSection.style.transition = "transform 1s ease-in-out";
         merkurSection.style.transform = "translate(-100%)";
         merkurUndersideSection.style.transition = "transform 1s ease-in-out";
         merkurUndersideSection.style.transform = "translate(-100%)";
+        setTimeout(() => {
+          const merkurUndersideFunFact = document.getElementById("funfact-merkur");
+          merkurUndersideFunFact.innerHTML = `${json[1].funFact}`;  
+          const merkurBubble = document.getElementsByClassName("merkur-funfact")[0];
+          const merkurMaskot = document.getElementsByClassName("merkur-maskot")[0];
+          merkurBubble.style.transition = "opacity 1s ease-in-out";
+          merkurBubble.style.opacity =1;
+          merkurMaskot.style.transition = "transform 1s ease-in-out";
+          merkurMaskot.style.transform = "translate(80vw, 30vh)";
+      }, 5000);
+    
       })
       .catch(error => console.error("error:", error));
   }
