@@ -123,8 +123,9 @@ document.addEventListener("DOMContentLoaded", function () {
           merkurBubble.style.transition = "opacity 1s ease-in-out";
           merkurBubble.style.opacity =1;
           merkurMaskot.style.transition = "transform 1s ease-in-out";
-          merkurMaskot.style.transform = "translate(80vw, 30vh)";
+          merkurMaskot.style.transform = "translate(40vw, -40vh)";
       }, 5000);
+
     
       })
       .catch(error => console.error("error:", error));
