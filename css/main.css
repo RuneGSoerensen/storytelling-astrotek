@@ -15,7 +15,7 @@ html {
   scroll-snap-type: y mandatory;
 }
 section {
-  scroll-snap-align: start; /* Snap each section to the start of the viewport */
+  scroll-snap-align: start; 
 }
 
 body {
@@ -24,6 +24,7 @@ body {
 .bodystuck {
   overflow-y: hidden;
 }
+/* start style af sectionerne */
 .slides {
   height: 100vh;
   width: 100vw;
@@ -176,7 +177,7 @@ p {
   text-decoration: none;
 }
 .navigation-side li {
-  list-style-type: disc; /* Add disc bullets */
+  list-style-type: disc; 
   color: var(--white);
 }
 .navigation-side li::marker {
@@ -208,7 +209,7 @@ p {
   color: gray;
 }
 
-/* STYLING AF SOLEN SIDE */
+/* STYLING AF SOLEN underside */
 
 .underside-solen {
   background-image: url(../media/background/background_2c.webp);
